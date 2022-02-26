@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763AF26F27CA6F81004040E2 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AF26E27CA6F81004040E2 /* MyNavigationController.swift */; };
 		764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764125F327CA6D2A0041EC89 /* AppDelegate.swift */; };
 		764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764125F527CA6D2A0041EC89 /* SceneDelegate.swift */; };
-		764125F827CA6D2A0041EC89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764125F727CA6D2A0041EC89 /* ViewController.swift */; };
-		764125FB27CA6D2A0041EC89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764125F927CA6D2A0041EC89 /* Main.storyboard */; };
+		764125F827CA6D2A0041EC89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764125F727CA6D2A0041EC89 /* MainViewController.swift */; };
 		764125FD27CA6D2B0041EC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764125FC27CA6D2B0041EC89 /* Assets.xcassets */; };
 		7641260027CA6D2B0041EC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764125FE27CA6D2B0041EC89 /* LaunchScreen.storyboard */; };
+		8394F7485BD547656AF1884D /* Pods_SwiftStudyWiKi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22B193D7A0C56FE65891648 /* Pods_SwiftStudyWiKi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CAE86E4C0B2A401680BFE55 /* Pods-SwiftStudyWiKi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi.release.xcconfig"; sourceTree = "<group>"; };
+		754B2D6AB84856CCCB1BBBB8 /* Pods-SwiftStudyWiKi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi.debug.xcconfig"; sourceTree = "<group>"; };
+		763AF26E27CA6F81004040E2 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		764125F027CA6D2A0041EC89 /* SwiftStudyWiKi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudyWiKi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		764125F327CA6D2A0041EC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		764125F527CA6D2A0041EC89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		764125F727CA6D2A0041EC89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		764125FA27CA6D2A0041EC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		764125F727CA6D2A0041EC89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		764125FC27CA6D2B0041EC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764125FF27CA6D2B0041EC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7641260127CA6D2B0041EC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A22B193D7A0C56FE65891648 /* Pods_SwiftStudyWiKi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyWiKi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8394F7485BD547656AF1884D /* Pods_SwiftStudyWiKi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63754EF5D8E8C8DFE1E2087E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A22B193D7A0C56FE65891648 /* Pods_SwiftStudyWiKi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		764125E727CA6D2A0041EC89 = {
 			isa = PBXGroup;
 			children = (
 				764125F227CA6D2A0041EC89 /* SwiftStudyWiKi */,
 				764125F127CA6D2A0041EC89 /* Products */,
+				FA476A6615A9F19795C15DB8 /* Pods */,
+				63754EF5D8E8C8DFE1E2087E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +73,22 @@
 			children = (
 				764125F327CA6D2A0041EC89 /* AppDelegate.swift */,
 				764125F527CA6D2A0041EC89 /* SceneDelegate.swift */,
-				764125F727CA6D2A0041EC89 /* ViewController.swift */,
-				764125F927CA6D2A0041EC89 /* Main.storyboard */,
+				764125F727CA6D2A0041EC89 /* MainViewController.swift */,
 				764125FC27CA6D2B0041EC89 /* Assets.xcassets */,
 				764125FE27CA6D2B0041EC89 /* LaunchScreen.storyboard */,
 				7641260127CA6D2B0041EC89 /* Info.plist */,
+				763AF26E27CA6F81004040E2 /* MyNavigationController.swift */,
 			);
 			path = SwiftStudyWiKi;
+			sourceTree = "<group>";
+		};
+		FA476A6615A9F19795C15DB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				754B2D6AB84856CCCB1BBBB8 /* Pods-SwiftStudyWiKi.debug.xcconfig */,
+				4CAE86E4C0B2A401680BFE55 /* Pods-SwiftStudyWiKi.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7641260427CA6D2B0041EC89 /* Build configuration list for PBXNativeTarget "SwiftStudyWiKi" */;
 			buildPhases = (
+				2B3AC510257BFB5D56D07B8C /* [CP] Check Pods Manifest.lock */,
 				764125EC27CA6D2A0041EC89 /* Sources */,
 				764125ED27CA6D2A0041EC89 /* Frameworks */,
 				764125EE27CA6D2A0041EC89 /* Resources */,
+				A18E75D6E25116362662742C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,18 +153,60 @@
 			files = (
 				7641260027CA6D2B0041EC89 /* LaunchScreen.storyboard in Resources */,
 				764125FD27CA6D2B0041EC89 /* Assets.xcassets in Resources */,
-				764125FB27CA6D2A0041EC89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B3AC510257BFB5D56D07B8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftStudyWiKi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A18E75D6E25116362662742C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		764125EC27CA6D2A0041EC89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				764125F827CA6D2A0041EC89 /* ViewController.swift in Sources */,
+				764125F827CA6D2A0041EC89 /* MainViewController.swift in Sources */,
+				763AF26F27CA6F81004040E2 /* MyNavigationController.swift in Sources */,
 				764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */,
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		764125F927CA6D2A0041EC89 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				764125FA27CA6D2A0041EC89 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		764125FE27CA6D2B0041EC89 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +344,7 @@
 		};
 		7641260527CA6D2B0041EC89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 754B2D6AB84856CCCB1BBBB8 /* Pods-SwiftStudyWiKi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +355,6 @@
 				INFOPLIST_FILE = SwiftStudyWiKi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -313,6 +373,7 @@
 		};
 		7641260627CA6D2B0041EC89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CAE86E4C0B2A401680BFE55 /* Pods-SwiftStudyWiKi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,7 +384,6 @@
 				INFOPLIST_FILE = SwiftStudyWiKi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
