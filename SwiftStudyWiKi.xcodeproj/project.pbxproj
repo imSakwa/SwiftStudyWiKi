@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		763AF26F27CA6F81004040E2 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AF26E27CA6F81004040E2 /* MyNavigationController.swift */; };
+		763AF27127CBABF3004040E2 /* SubjectTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AF27027CBABF3004040E2 /* SubjectTableCell.swift */; };
 		764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764125F327CA6D2A0041EC89 /* AppDelegate.swift */; };
 		764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764125F527CA6D2A0041EC89 /* SceneDelegate.swift */; };
 		764125F827CA6D2A0041EC89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764125F727CA6D2A0041EC89 /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 		4CAE86E4C0B2A401680BFE55 /* Pods-SwiftStudyWiKi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi.release.xcconfig"; sourceTree = "<group>"; };
 		754B2D6AB84856CCCB1BBBB8 /* Pods-SwiftStudyWiKi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi.debug.xcconfig"; sourceTree = "<group>"; };
 		763AF26E27CA6F81004040E2 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		763AF27027CBABF3004040E2 /* SubjectTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableCell.swift; sourceTree = "<group>"; };
 		764125F027CA6D2A0041EC89 /* SwiftStudyWiKi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudyWiKi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		764125F327CA6D2A0041EC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		764125F527CA6D2A0041EC89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				764125F327CA6D2A0041EC89 /* AppDelegate.swift */,
 				764125F527CA6D2A0041EC89 /* SceneDelegate.swift */,
 				764125F727CA6D2A0041EC89 /* MainViewController.swift */,
+				763AF27027CBABF3004040E2 /* SubjectTableCell.swift */,
 				764125FC27CA6D2B0041EC89 /* Assets.xcassets */,
 				764125FE27CA6D2B0041EC89 /* LaunchScreen.storyboard */,
 				7641260127CA6D2B0041EC89 /* Info.plist */,
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				764125F827CA6D2A0041EC89 /* MainViewController.swift in Sources */,
+				763AF27127CBABF3004040E2 /* SubjectTableCell.swift in Sources */,
 				763AF26F27CA6F81004040E2 /* MyNavigationController.swift in Sources */,
 				764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */,
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,
