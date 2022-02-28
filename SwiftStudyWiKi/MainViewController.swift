@@ -11,15 +11,16 @@ import Then
 
 class MainViewController: UIViewController {
 
-    let subjectTableView = UITableView().then {
-        $0.backgroundColor = .red
-    }
+    let subjectTableView = UITableView(frame: .zero, style: .insetGrouped)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
         self.navigationItem.title = "Chagmn's Swift WiKi📕"
+        
+        setLayout()
+        setSubjectTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,7 +54,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.backgroundColor = .green
+        cell.titleLbl.text = "테스트 제목~~"
+        cell.selectionStyle = .none
         
         return cell
     }
