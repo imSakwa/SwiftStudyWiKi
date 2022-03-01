@@ -11,13 +11,31 @@ import Then
 
 class PrefetchViewController: UIViewController {
     
+    let prefetchTableView = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
         self.navigationItem.title = "Prefetch"
         
-        
-        
+        setTableView()
     }
+    
+    private func setTableView() {
+        prefetchTableView.delegate = self
+        prefetchTableView.dataSource = self
+    }
+}
+
+extension PrefetchViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
 }
