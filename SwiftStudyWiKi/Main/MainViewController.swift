@@ -11,6 +11,12 @@ import Then
 
 class MainViewController: UIViewController {
 
+    let cellTitleArr = [
+        "1. Prefetch",
+        "2. ",
+        "3. "
+    ]
+    
     let subjectTableView = UITableView(frame: .zero, style: .insetGrouped)
     
     override func viewDidLoad() {
@@ -46,7 +52,7 @@ class MainViewController: UIViewController {
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return cellTitleArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -54,7 +60,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.titleLbl.text = "테스트 제목~~"
+        cell.titleLbl.text = cellTitleArr[indexPath.row]
+        cell.nextIcon.tintColor = .black
         cell.selectionStyle = .none
         
         return cell
@@ -65,6 +72,17 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        backBarButtonItem.tintColor = .black
+        self.navigationItem.backBarButtonItem = backBarButtonItem
+
+        switch indexPath.row {
+        case 0:
+            let vc = PrefetchViewController()
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        default:
+            break
+        }
     }
 }
