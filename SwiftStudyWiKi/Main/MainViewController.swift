@@ -28,6 +28,12 @@ class MainViewController: UIViewController {
         $0.tintColor = .red
     }
     
+    let naviTitleLbl = UILabel().then {
+        $0.font = .systemFont(ofSize: 16, weight: .bold)
+        $0.textColor = .black
+        $0.text = "Chagmn's Swift WiKi"
+    }
+    
     
     let subjectTableView = UITableView(frame: .zero, style: .insetGrouped)
     
@@ -38,7 +44,6 @@ class MainViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         
         setLayout()
-//        setNaviBar()
         setSubjectTableView()
     }
     
@@ -74,6 +79,13 @@ class MainViewController: UIViewController {
             $0.trailing.equalToSuperview().inset(10)
             $0.size.equalTo(24)
             $0.centerY.equalToSuperview()
+        }
+        
+        naviBarView.addSubview(naviTitleLbl)
+        naviTitleLbl.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.centerX.equalToSuperview()
+            $0.height.equalTo(20)
         }
         
         self.view.addSubview(subjectTableView)
