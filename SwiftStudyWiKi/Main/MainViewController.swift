@@ -18,12 +18,16 @@ class MainViewController: UIViewController {
     ]
     
     let naviBarView = UIView().then {
-        $0.backgroundColor = .green
+        $0.backgroundColor = .white
     }
     
-    let naviTestButton = UIButton().then {
-        $0.setImage(UIImage(systemName: <#T##String#>), for: <#T##UIControl.State#>)
+    let naviTestButton = UIButton(type: .custom).then {
+        $0.addTarget(self, action: #selector(clickNaviTestBtn), for: .touchUpInside)
+        $0.setImage(UIImage(systemName: "heart"), for: .normal)
+        $0.setImage(UIImage(systemName: "heart.fill"), for: .selected)
+        $0.tintColor = .red
     }
+    
     
     let subjectTableView = UITableView(frame: .zero, style: .insetGrouped)
     
@@ -34,7 +38,7 @@ class MainViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         
         setLayout()
-        setNaviBar()
+//        setNaviBar()
         setSubjectTableView()
     }
     
@@ -43,8 +47,12 @@ class MainViewController: UIViewController {
         
     }
     
-    private func setNaviBar() {
-        
+    @objc func clickNaviTestBtn(_ sender: UIButton) {
+        if sender.isSelected {
+            sender.isSelected = false
+        } else {
+            sender.isSelected = true
+        }
     }
     
     private func setSubjectTableView() {
@@ -59,6 +67,13 @@ class MainViewController: UIViewController {
             $0.height.equalTo(50)
             $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
             $0.leading.trailing.equalToSuperview()
+        }
+        
+        naviBarView.addSubview(naviTestButton)
+        naviTestButton.snp.makeConstraints {
+            $0.trailing.equalToSuperview().inset(10)
+            $0.size.equalTo(24)
+            $0.centerY.equalToSuperview()
         }
         
         self.view.addSubview(subjectTableView)
