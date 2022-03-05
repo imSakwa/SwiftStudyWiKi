@@ -17,20 +17,33 @@ class MainViewController: UIViewController {
         "3. "
     ]
     
+    let naviBarView = UIView().then {
+        $0.backgroundColor = .green
+    }
+    
+    let naviTestButton = UIButton().then {
+        $0.setImage(UIImage(systemName: <#T##String#>), for: <#T##UIControl.State#>)
+    }
+    
     let subjectTableView = UITableView(frame: .zero, style: .insetGrouped)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
-        self.navigationItem.title = "Chagmn's Swift WiKi📕"
+        self.navigationController?.isNavigationBarHidden = true
         
         setLayout()
+        setNaviBar()
         setSubjectTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+    }
+    
+    private func setNaviBar() {
         
     }
     
@@ -41,9 +54,17 @@ class MainViewController: UIViewController {
     }
     
     private func setLayout() {
+        self.view.addSubview(naviBarView)
+        naviBarView.snp.makeConstraints {
+            $0.height.equalTo(50)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+            $0.leading.trailing.equalToSuperview()
+        }
+        
         self.view.addSubview(subjectTableView)
         subjectTableView.snp.makeConstraints {
-            $0.top.leading.trailing.bottom.equalToSuperview()
+            $0.top.equalTo(naviBarView.snp.bottom)
+            $0.leading.trailing.bottom.equalToSuperview()
         }
     }
     
