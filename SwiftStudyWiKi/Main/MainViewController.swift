@@ -13,8 +13,8 @@ class MainViewController: UIViewController {
 
     let cellTitleArr = [
         "1. Prefetch",
-        "2. ",
-        "3. "
+        "2. Test",
+        "3. Test"
     ]
     
     let naviBarView = UIView().then {
