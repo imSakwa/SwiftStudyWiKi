@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760C973627F9A4A50051F8BF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C973527F9A4A50051F8BF /* ViewModel.swift */; };
+		760C973827F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C973727F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift */; };
+		760C973A27F9B4370051F8BF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C973927F9B4370051F8BF /* Model.swift */; };
 		763AF26F27CA6F81004040E2 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AF26E27CA6F81004040E2 /* MyNavigationController.swift */; };
 		763AF27127CBABF3004040E2 /* SubjectTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AF27027CBABF3004040E2 /* SubjectTableCell.swift */; };
 		764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764125F327CA6D2A0041EC89 /* AppDelegate.swift */; };
@@ -22,6 +25,9 @@
 /* Begin PBXFileReference section */
 		4CAE86E4C0B2A401680BFE55 /* Pods-SwiftStudyWiKi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi.release.xcconfig"; sourceTree = "<group>"; };
 		754B2D6AB84856CCCB1BBBB8 /* Pods-SwiftStudyWiKi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi.debug.xcconfig"; sourceTree = "<group>"; };
+		760C973527F9A4A50051F8BF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		760C973727F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		760C973927F9B4370051F8BF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		763AF26E27CA6F81004040E2 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		763AF27027CBABF3004040E2 /* SubjectTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableCell.swift; sourceTree = "<group>"; };
 		764125F027CA6D2A0041EC89 /* SwiftStudyWiKi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudyWiKi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */,
+				760C973527F9A4A50051F8BF /* ViewModel.swift */,
+				760C973727F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift */,
+				760C973927F9B4370051F8BF /* Model.swift */,
 			);
 			path = PrefetchStudy;
 			sourceTree = "<group>";
@@ -243,8 +252,11 @@
 				763AF27127CBABF3004040E2 /* SubjectTableCell.swift in Sources */,
 				763AF26F27CA6F81004040E2 /* MyNavigationController.swift in Sources */,
 				764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */,
+				760C973A27F9B4370051F8BF /* Model.swift in Sources */,
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,
+				760C973627F9A4A50051F8BF /* ViewModel.swift in Sources */,
 				76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */,
+				760C973827F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
