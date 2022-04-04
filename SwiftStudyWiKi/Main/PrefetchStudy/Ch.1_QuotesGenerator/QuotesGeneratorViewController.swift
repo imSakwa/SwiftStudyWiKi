@@ -21,15 +21,17 @@ class QuotesGeneratorViewController: UIViewController {
     }
     
     private let quotesLbl = UILabel().then {
-        $0.text = "갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸갸갸갸ㅑ갸갸"
+        $0.text = "명언"
         $0.numberOfLines = 0
     }
     
     private let quotesPersonNM = UILabel().then {
-        $0.text = "갸갸ㅑ갸갸갸ㅑㄱ"
+        $0.text = "이름"
     }
     
-    private let changeBtn = UIButton()
+    private let generateBtn = UIButton(type: .system).then {
+        $0.setTitle("명언 생성", for: .normal)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +49,7 @@ class QuotesGeneratorViewController: UIViewController {
         
         self.view.addSubview(quotesView)
         quotesView.snp.makeConstraints {
-            $0.top.equalTo(titleLbl.snp.bottom).offset(15)
+            $0.top.equalTo(titleLbl.snp.bottom).offset(80)
             $0.leading.trailing.equalToSuperview().inset(24)
             $0.height.equalTo(200)
         }
@@ -68,5 +70,11 @@ class QuotesGeneratorViewController: UIViewController {
         
         quotesLbl.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
         quotesPersonNM.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
+        
+        self.view.addSubview(generateBtn)
+        generateBtn.snp.makeConstraints {
+            $0.top.equalTo(quotesView.snp.bottom).offset(20)
+            $0.centerX.equalTo(quotesView)
+        }
     }
 }
