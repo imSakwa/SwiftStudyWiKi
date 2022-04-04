@@ -11,6 +11,11 @@ import Then
 
 class PrefetchTableCellTableViewCell: UITableViewCell {
 
+    let textlbl = UILabel().then {
+        $0.textColor = .black
+        $0.font = .systemFont(ofSize: 18, weight: .bold)
+    }
+    
     let imgView = UIImageView().then {
         $0.contentMode = .scaleAspectFill
         $0.clipsToBounds = true
@@ -19,10 +24,16 @@ class PrefetchTableCellTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        contentView.addSubview(imgView)
-        imgView.snp.makeConstraints {
+//        contentView.addSubview(imgView)
+//        imgView.snp.makeConstraints {
+//            $0.centerX.equalToSuperview()
+//            $0.top.bottom.equalToSuperview()
+//        }
+        
+        contentView.addSubview(textlbl)
+        textlbl.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.bottom.equalToSuperview()
+            $0.top.bottom.equalToSuperview().inset(20)
         }
     }
     

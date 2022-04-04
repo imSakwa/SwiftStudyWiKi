@@ -13,7 +13,9 @@ class PrefetchViewController: UIViewController {
     
     let prefetchTableView = UITableView()
     
-    let viewModel = Array(1...100).map { _ in ViewModel() }
+    let arr = Array(1...100).map { "\($0)" }
+    
+//    let viewModel = Array(1...100).map { _ in ViewModel() }
 //    let viewModel = ViewModel()
     
     override func viewDidLoad() {
@@ -29,8 +31,8 @@ class PrefetchViewController: UIViewController {
         prefetchTableView.delegate = self
         prefetchTableView.dataSource = self
         prefetchTableView.prefetchDataSource = self
-        prefetchTableView.rowHeight = 300
-        prefetchTableView.estimatedRowHeight = UITableView.automaticDimension
+//        prefetchTableView.rowHeight = 300
+//        prefetchTableView.estimatedRowHeight = UITableView.automaticDimension
         
         prefetchTableView.register(PrefetchTableCellTableViewCell.self, forCellReuseIdentifier: "prefetchCell")
         
@@ -52,17 +54,18 @@ extension PrefetchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "prefetchCell", for: indexPath) as? PrefetchTableCellTableViewCell else { return UITableViewCell() }
         
-        cell.configure(viewModel: viewModel[indexPath.row], index: indexPath)
+        print("cellForRow : \(indexPath.row+1)")
+        cell.textlbl.text = arr[indexPath.row]
+//        cell.configure(viewModel: viewModel[indexPath.row], index: indexPath)
         
-        print("cellForRow : \(indexPath.row)")
         return cell
     }
     
 //    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
 //
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "prefetchCell", for: indexPath) as! PrefetchTableCellTableViewCell
-//
-//        cell.configure(viewModel: viewModel, index: indexPath)
+////        let cell = tableView.dequeueReusableCell(withIdentifier: "prefetchCell", for: indexPath) as! PrefetchTableCellTableViewCell
+////
+////        cell.configure(viewModel: viewModel, index: indexPath)
 //        print("willDisplay : \(indexPath.row)")
 //    }
 }
@@ -72,8 +75,9 @@ extension PrefetchViewController: UITableViewDataSourcePrefetching {
 
         for indexPath in indexPaths {
             print("prefectRowAt : \(indexPath.row)")
-            let viewModel = viewModel[indexPath.row]
-            viewModel.downloadImage(row: indexPath.row, completion: nil)
+            
+//            let viewModel = viewModel[indexPath.row]
+//            viewModel.downloadImage(row: indexPath.row, completion: nil)
         }
     }
 }
