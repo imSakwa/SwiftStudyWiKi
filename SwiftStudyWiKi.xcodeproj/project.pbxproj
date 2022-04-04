@@ -69,8 +69,7 @@
 			children = (
 				760C973C27F9F2100051F8BF /* QuotesGenerator.swift */,
 			);
-			name = Ch.1_QuotesGenerator;
-			path = "Ch.1 명언 생성기";
+			path = Ch.1_QuotesGenerator;
 			sourceTree = "<group>";
 		};
 		764125E727CA6D2A0041EC89 = {
