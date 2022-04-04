@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
 
     let cellTitleArr = [
         "1. Prefetch",
-        "2. Test",
+        "2. 명언 생성기",
         "3. Test",
         "4. 하.."
     ]
@@ -130,6 +130,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             let vc = PrefetchViewController()
             
             self.navigationController?.pushViewController(vc, animated: true)
+            
+        case 1:
+            self.navigationController?.pushViewController(QuotesGeneratorViewController(), animated: true)
+            
         default:
             break
         }
