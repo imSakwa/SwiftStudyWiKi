@@ -10,6 +10,14 @@ import SnapKit
 import Then
 
 class QuotesGeneratorViewController: UIViewController {
+    
+    let quotesArr: [Quotes] = [
+        Quotes(content: "나는 배고프다.", name: "이창민"),
+        Quotes(content: "진짜 배고프다.", name: "이창민"),
+        Quotes(content: "정말 배고프다.", name: "이창민"),
+        Quotes(content: "정말 배고플까?", name: "이창민"),
+        Quotes(content: "거짓말이다.", name: "배"),
+    ]
 
     private let titleLbl = UILabel().then {
         $0.text = "명언 생성기"
@@ -21,16 +29,19 @@ class QuotesGeneratorViewController: UIViewController {
     }
     
     private let quotesLbl = UILabel().then {
-        $0.text = "명언"
+        $0.text = ""
+        $0.textAlignment = .center
         $0.numberOfLines = 0
     }
     
     private let quotesPersonNM = UILabel().then {
-        $0.text = "이름"
+        $0.text = ""
+        $0.textAlignment = .center
     }
     
     private let generateBtn = UIButton(type: .system).then {
         $0.setTitle("명언 생성", for: .normal)
+        $0.addTarget(self, action: #selector(clickGenerateBtn), for: .touchUpInside)
     }
     
     override func viewDidLoad() {
@@ -38,6 +49,13 @@ class QuotesGeneratorViewController: UIViewController {
         self.view.backgroundColor = .white
 
         setupViewLayout()
+    }
+    
+    @objc private func clickGenerateBtn(_ sender: UIButton) {
+        let random = Int.random(in: 0..<5)
+        
+        quotesPersonNM.text = quotesArr[random].name
+        quotesLbl.text = quotesArr[random].content
     }
     
     private func setupViewLayout() {

@@ -20,6 +20,7 @@
 		76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */; };
 		76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB7227CE1D81004F90E0 /* SubjectData.swift */; };
 		76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */; };
+		76DF614A27FB46D900E4F436 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF614927FB46D900E4F436 /* Quotes.swift */; };
 		8394F7485BD547656AF1884D /* Pods_SwiftStudyWiKi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22B193D7A0C56FE65891648 /* Pods_SwiftStudyWiKi.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchViewController.swift; sourceTree = "<group>"; };
 		76D8DB7227CE1D81004F90E0 /* SubjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectData.swift; sourceTree = "<group>"; };
 		76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesGeneratorViewController.swift; sourceTree = "<group>"; };
+		76DF614927FB46D900E4F436 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 		A22B193D7A0C56FE65891648 /* Pods_SwiftStudyWiKi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyWiKi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */,
+				76DF614927FB46D900E4F436 /* Quotes.swift */,
 			);
 			name = Ch.1_QuotesGenerator;
 			path = PrefetchStudy/Ch.1_QuotesGenerator;
@@ -267,6 +270,7 @@
 				760C973A27F9B4370051F8BF /* Model.swift in Sources */,
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,
 				760C973627F9A4A50051F8BF /* ViewModel.swift in Sources */,
+				76DF614A27FB46D900E4F436 /* Quotes.swift in Sources */,
 				76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */,
 				76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */,
 				760C973827F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift in Sources */,
