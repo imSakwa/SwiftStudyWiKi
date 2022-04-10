@@ -17,6 +17,8 @@
 		764125F827CA6D2A0041EC89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764125F727CA6D2A0041EC89 /* MainViewController.swift */; };
 		764125FD27CA6D2B0041EC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764125FC27CA6D2B0041EC89 /* Assets.xcassets */; };
 		7641260027CA6D2B0041EC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764125FE27CA6D2B0041EC89 /* LaunchScreen.storyboard */; };
+		76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FDE2803110C007A3C81 /* LEDViewController.swift */; };
+		76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FE0280316B0007A3C81 /* SettingViewController.swift */; };
 		76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */; };
 		76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB7227CE1D81004F90E0 /* SubjectData.swift */; };
 		76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */; };
@@ -39,6 +41,8 @@
 		764125FC27CA6D2B0041EC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764125FF27CA6D2B0041EC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7641260127CA6D2B0041EC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76A90FDE2803110C007A3C81 /* LEDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDViewController.swift; sourceTree = "<group>"; };
+		76A90FE0280316B0007A3C81 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchViewController.swift; sourceTree = "<group>"; };
 		76D8DB7227CE1D81004F90E0 /* SubjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectData.swift; sourceTree = "<group>"; };
 		76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesGeneratorViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +102,15 @@
 			path = SwiftStudyWiKi;
 			sourceTree = "<group>";
 		};
+		76A90FDD28030E8E007A3C81 /* Ch2_LED */ = {
+			isa = PBXGroup;
+			children = (
+				76A90FDE2803110C007A3C81 /* LEDViewController.swift */,
+				76A90FE0280316B0007A3C81 /* SettingViewController.swift */,
+			);
+			path = Ch2_LED;
+			sourceTree = "<group>";
+		};
 		76D8DB6D27CE1BAD004F90E0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +119,7 @@
 				763AF26E27CA6F81004040E2 /* MyNavigationController.swift */,
 				76D8DB6E27CE1BC7004F90E0 /* PrefetchStudy */,
 				76DF614627FB426E00E4F436 /* Ch.1_QuotesGenerator */,
+				76A90FDD28030E8E007A3C81 /* Ch2_LED */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -132,8 +146,8 @@
 		76DF614627FB426E00E4F436 /* Ch.1_QuotesGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */,
 				76DF614927FB46D900E4F436 /* Quotes.swift */,
+				76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */,
 			);
 			name = Ch.1_QuotesGenerator;
 			path = PrefetchStudy/Ch.1_QuotesGenerator;
@@ -266,6 +280,8 @@
 				76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */,
 				763AF27127CBABF3004040E2 /* SubjectTableCell.swift in Sources */,
 				763AF26F27CA6F81004040E2 /* MyNavigationController.swift in Sources */,
+				76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */,
+				76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */,
 				764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */,
 				760C973A27F9B4370051F8BF /* Model.swift in Sources */,
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,

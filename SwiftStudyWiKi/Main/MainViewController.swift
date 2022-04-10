@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
     let cellTitleArr = [
         "1. Prefetch",
         "2. 명언 생성기",
-        "3. Test",
+        "3. LED",
         "4. 하.."
     ]
     
@@ -133,6 +133,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             
         case 1:
             self.navigationController?.pushViewController(QuotesGeneratorViewController(), animated: true)
+            
+        case 2:
+            self.navigationController?.pushViewController(LEDViewController(), animated: true)
             
         default:
             break
