@@ -7,8 +7,19 @@
 
 import UIKit
 
+protocol SettingDelegate: AnyObject {
+    func changeSetting(text: String?, color: UIColor , backColor: UIColor)
+}
+
 class SettingViewController: UIViewController {
 
+    var colorValue: Int = 0 // 0:빨강, 1:파랑, 2: 초록
+    var backColorValue: Int = 0 // 0:빨강, 1:파랑, 2: 초록
+    
+    weak var delegate: SettingDelegate?
+    var color: UIColor = .black
+    var backColor: UIColor = .red
+    
     let naviView = UIView().then {
         $0.backgroundColor = .white
     }
@@ -52,14 +63,20 @@ class SettingViewController: UIViewController {
     
     let ledRedColorBtn = UIButton(type: .system).then {
         $0.setTitle("빨간색", for: .normal)
+        $0.tag = 0
+        $0.addTarget(self, action: #selector(changeColor), for: .touchUpInside)
     }
     
     let ledBlueColorBtn = UIButton(type: .system).then {
         $0.setTitle("파란색", for: .normal)
+        $0.tag = 1
+        $0.addTarget(self, action: #selector(changeColor), for: .touchUpInside)
     }
     
     let ledGreenColorBtn = UIButton(type: .system).then {
         $0.setTitle("초록색", for: .normal)
+        $0.tag = 2
+        $0.addTarget(self, action: #selector(changeColor), for: .touchUpInside)
     }
     
     let ledBackColorOptionStack = UIStackView().then {
@@ -78,18 +95,25 @@ class SettingViewController: UIViewController {
     
     let ledBackRedColorBtn = UIButton(type: .system).then {
         $0.setTitle("빨간색", for: .normal)
+        $0.tag = 0
+        $0.addTarget(self, action: #selector(changeBackColor), for: .touchUpInside)
     }
     
     let ledBackBlueColorBtn = UIButton(type: .system).then {
         $0.setTitle("파란색", for: .normal)
+        $0.tag = 1
+        $0.addTarget(self, action: #selector(changeBackColor), for: .touchUpInside)
     }
     
     let ledBackGreenColorBtn = UIButton(type: .system).then {
         $0.setTitle("초록색", for: .normal)
+        $0.tag = 2
+        $0.addTarget(self, action: #selector(changeBackColor), for: .touchUpInside)
     }
     
     let saveBtn = UIButton(type: .system).then {
         $0.setTitle("저장하기", for: .normal)
+        $0.addTarget(self, action: #selector(clickSaveBtn), for: .touchUpInside)
     }
     
     
@@ -98,6 +122,38 @@ class SettingViewController: UIViewController {
         self.view.backgroundColor = .white
         
         addView()
+    }
+    
+    @objc private func changeColor(_ sender: UIButton) {
+        switch sender.tag {
+        case 0:
+            color = .red
+        case 1:
+            color = .blue
+        case 2:
+            color = .green
+        default:
+            break
+        }
+    }
+    
+    @objc private func changeBackColor(_ sender: UIButton) {
+        switch sender.tag {
+        case 0:
+            backColor = .red
+        case 1:
+            backColor = .blue
+        case 2:
+            backColor = .green
+        default:
+            break
+        }
+    }
+    
+    @objc private func clickSaveBtn(_ sender: UIButton) {
+        delegate?.changeSetting(text: self.ledLblTextField.text, color: self.color, backColor: self.backColor)
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     

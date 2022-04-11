@@ -9,7 +9,13 @@ import UIKit
 import SnapKit
 import Then
 
-class LEDViewController: UIViewController {
+class LEDViewController: UIViewController, SettingDelegate {
+    func changeSetting(text: String?, color: UIColor, backColor: UIColor) {
+        ledLbl.text = text
+        ledLbl.textColor = color
+        ledLbl.backgroundColor = backColor
+    }
+    
 
     let naviView = UIView().then {
         $0.backgroundColor = .white
@@ -74,7 +80,9 @@ class LEDViewController: UIViewController {
     }
     
     @objc private func clickSetting() {
-        self.navigationController?.pushViewController(SettingViewController(), animated: true)
+        let settingVC = SettingViewController()
+        settingVC.delegate = self
+        self.navigationController?.pushViewController(settingVC, animated: true)
     }
     
     @objc private func clickBackBtn() {
