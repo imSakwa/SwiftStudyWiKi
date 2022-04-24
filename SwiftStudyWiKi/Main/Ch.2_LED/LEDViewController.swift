@@ -82,6 +82,7 @@ class LEDViewController: UIViewController, SettingDelegate {
     @objc private func clickSetting() {
         let settingVC = SettingViewController()
         settingVC.delegate = self
+        settingVC.ledLblTextField.text = self.ledLbl.text
         self.navigationController?.pushViewController(settingVC, animated: true)
     }
     
