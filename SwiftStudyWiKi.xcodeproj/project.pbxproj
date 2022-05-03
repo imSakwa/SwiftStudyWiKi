@@ -23,6 +23,7 @@
 		76A58783282160B300D8D3DB /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A58782282160B300D8D3DB /* WeatherViewController.swift */; };
 		76A5878528216F8200D8D3DB /* WeatherInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5878428216F8200D8D3DB /* WeatherInformation.swift */; };
 		76A587872821743C00D8D3DB /* ErrorMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A587862821743C00D8D3DB /* ErrorMsg.swift */; };
+		76A5878A2821767500D8D3DB /* CovidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A587892821767500D8D3DB /* CovidViewController.swift */; };
 		76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FDE2803110C007A3C81 /* LEDViewController.swift */; };
 		76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FE0280316B0007A3C81 /* SettingViewController.swift */; };
 		76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */; };
@@ -53,6 +54,7 @@
 		76A58782282160B300D8D3DB /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		76A5878428216F8200D8D3DB /* WeatherInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInformation.swift; sourceTree = "<group>"; };
 		76A587862821743C00D8D3DB /* ErrorMsg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMsg.swift; sourceTree = "<group>"; };
+		76A587892821767500D8D3DB /* CovidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidViewController.swift; sourceTree = "<group>"; };
 		76A90FDE2803110C007A3C81 /* LEDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDViewController.swift; sourceTree = "<group>"; };
 		76A90FE0280316B0007A3C81 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 			path = Ch.7_Weather;
 			sourceTree = "<group>";
 		};
+		76A587882821765A00D8D3DB /* Ch.8_Covid */ = {
+			isa = PBXGroup;
+			children = (
+				76A587892821767500D8D3DB /* CovidViewController.swift */,
+			);
+			path = Ch.8_Covid;
+			sourceTree = "<group>";
+		};
 		76A90FDD28030E8E007A3C81 /* Ch.2_LED */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +164,7 @@
 				76A90FDD28030E8E007A3C81 /* Ch.2_LED */,
 				760524802815B3A700C3C243 /* Ch.5_Diary */,
 				76A587812821604800D8D3DB /* Ch.7_Weather */,
+				76A587882821765A00D8D3DB /* Ch.8_Covid */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -319,6 +330,7 @@
 				760524862815B7DD00C3C243 /* DiaryFavoItemViewController.swift in Sources */,
 				76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */,
 				76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */,
+				76A5878A2821767500D8D3DB /* CovidViewController.swift in Sources */,
 				764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */,
 				760C973A27F9B4370051F8BF /* Model.swift in Sources */,
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,
