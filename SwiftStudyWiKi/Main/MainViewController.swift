@@ -15,7 +15,8 @@ class MainViewController: UIViewController {
         "1. Prefetch",
         "2. 명언 생성기",
         "3. LED",
-        "4. 하.."
+        "4. ????",
+        "5. Diary",
     ]
     
     let naviBarView = UIView().then {
@@ -136,6 +137,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             
         case 2:
             self.navigationController?.pushViewController(LEDViewController(), animated: true)
+            
+        case 4:
+            self.navigationController?.pushViewController(DiaryTabBarController(), animated: true)
+            
             
         default:
             break
