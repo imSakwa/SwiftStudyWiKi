@@ -17,6 +17,8 @@ class MainViewController: UIViewController {
         "3. LED",
         "4. ????",
         "5. Diary",
+        "6. ?????",
+        "7. Weather",
     ]
     
     let naviBarView = UIView().then {
@@ -140,6 +142,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             
         case 4:
             self.navigationController?.pushViewController(DiaryTabBarController(), animated: true)
+            
+        case 6:
+            self.navigationController?.pushViewController(WeatherViewController(), animated: true)
             
             
         default:

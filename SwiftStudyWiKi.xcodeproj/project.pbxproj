@@ -20,6 +20,9 @@
 		764125F827CA6D2A0041EC89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764125F727CA6D2A0041EC89 /* MainViewController.swift */; };
 		764125FD27CA6D2B0041EC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764125FC27CA6D2B0041EC89 /* Assets.xcassets */; };
 		7641260027CA6D2B0041EC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764125FE27CA6D2B0041EC89 /* LaunchScreen.storyboard */; };
+		76A58783282160B300D8D3DB /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A58782282160B300D8D3DB /* WeatherViewController.swift */; };
+		76A5878528216F8200D8D3DB /* WeatherInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5878428216F8200D8D3DB /* WeatherInformation.swift */; };
+		76A587872821743C00D8D3DB /* ErrorMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A587862821743C00D8D3DB /* ErrorMsg.swift */; };
 		76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FDE2803110C007A3C81 /* LEDViewController.swift */; };
 		76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FE0280316B0007A3C81 /* SettingViewController.swift */; };
 		76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */; };
@@ -47,6 +50,9 @@
 		764125FC27CA6D2B0041EC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764125FF27CA6D2B0041EC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7641260127CA6D2B0041EC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76A58782282160B300D8D3DB /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		76A5878428216F8200D8D3DB /* WeatherInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInformation.swift; sourceTree = "<group>"; };
+		76A587862821743C00D8D3DB /* ErrorMsg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMsg.swift; sourceTree = "<group>"; };
 		76A90FDE2803110C007A3C81 /* LEDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDViewController.swift; sourceTree = "<group>"; };
 		76A90FE0280316B0007A3C81 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +124,16 @@
 			path = SwiftStudyWiKi;
 			sourceTree = "<group>";
 		};
+		76A587812821604800D8D3DB /* Ch.7_Weather */ = {
+			isa = PBXGroup;
+			children = (
+				76A58782282160B300D8D3DB /* WeatherViewController.swift */,
+				76A5878428216F8200D8D3DB /* WeatherInformation.swift */,
+				76A587862821743C00D8D3DB /* ErrorMsg.swift */,
+			);
+			path = Ch.7_Weather;
+			sourceTree = "<group>";
+		};
 		76A90FDD28030E8E007A3C81 /* Ch.2_LED */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +153,7 @@
 				76DF614627FB426E00E4F436 /* Ch.1_QuotesGenerator */,
 				76A90FDD28030E8E007A3C81 /* Ch.2_LED */,
 				760524802815B3A700C3C243 /* Ch.5_Diary */,
+				76A587812821604800D8D3DB /* Ch.7_Weather */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -294,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				764125F827CA6D2A0041EC89 /* MainViewController.swift in Sources */,
+				76A58783282160B300D8D3DB /* WeatherViewController.swift in Sources */,
 				760524822815B43900C3C243 /* DiaryViewController.swift in Sources */,
 				76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */,
 				763AF27127CBABF3004040E2 /* SubjectTableCell.swift in Sources */,
@@ -306,9 +324,11 @@
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,
 				760C973627F9A4A50051F8BF /* ViewModel.swift in Sources */,
 				76DF614A27FB46D900E4F436 /* Quotes.swift in Sources */,
+				76A5878528216F8200D8D3DB /* WeatherInformation.swift in Sources */,
 				76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */,
 				76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */,
 				760C973827F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift in Sources */,
+				76A587872821743C00D8D3DB /* ErrorMsg.swift in Sources */,
 				760524842815B70C00C3C243 /* DiaryTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
