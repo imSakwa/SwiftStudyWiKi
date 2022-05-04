@@ -58,13 +58,70 @@ class CovidViewController: UIViewController {
             
             switch result {
             case let .success(result):
-                debugPrint("success \(result)")
+                self.configureStackView(koreaCovidOverview: result.korea)
+                
+                let covidOverviewList = self.makeCovidOverviewLis(cityCovidOverview: result)
+                self.configureChartView(covidOverviewList: covidOverviewList)
                 
             case let.failure(error):
                 debugPrint("failure \(error)")
             }
-            
         })
+    }
+    
+    private func makeCovidOverviewLis(
+        cityCovidOverview: CityCovidOverview
+    ) -> [CovidOverview] {
+        return [
+            cityCovidOverview.seoul,
+            cityCovidOverview.busan,
+            cityCovidOverview.daegu,
+            cityCovidOverview.incheon,
+            cityCovidOverview.gwangju,
+            cityCovidOverview.ulsan,
+            cityCovidOverview.sejong,
+            cityCovidOverview.gyeonggi,
+            cityCovidOverview.chungbuk,
+            cityCovidOverview.chungnam,
+            cityCovidOverview.gyeongbuk,
+            cityCovidOverview.gyeongnam,
+            cityCovidOverview.jeonbuk,
+            cityCovidOverview.jeonnam,
+            cityCovidOverview.jeju,
+        ]
+    }
+    
+    private func configureChartView(covidOverviewList: [CovidOverview]) {
+        let entries = covidOverviewList.compactMap { [weak self] overview -> PieChartDataEntry? in
+            guard let self = self else { return nil }
+            
+            return PieChartDataEntry(value: self.removeFormatStr(str: overview.newCase), label: overview.countryName, data: overview)
+        }
+        
+        let dataSet = PieChartDataSet(entries: entries, label: "코로나 발생 현황")
+        dataSet.valueTextColor = .black
+        dataSet.sliceSpace = 1
+        dataSet.entryLabelColor = .black
+        dataSet.xValuePosition = .outsideSlice
+        dataSet.valueLinePart1OffsetPercentage = 0.8
+        dataSet.valueLinePart1Length = 0.2
+        dataSet.valueLinePart2Length = 0.3
+        dataSet.colors = ChartColorTemplates.vordiplom() + ChartColorTemplates.joyful() + ChartColorTemplates.liberty() + ChartColorTemplates.pastel() + ChartColorTemplates.material()
+        
+        self.chartView.data = PieChartData(dataSet: dataSet)
+        self.chartView.spin(duration: 0.3, fromAngle: self.chartView.rotationAngle, toAngle: self.chartView.rotationAngle + 10)
+    }
+    
+    private func removeFormatStr(str: String) -> Double {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        
+        return formatter.number(from: str)?.doubleValue ?? 0
+    }
+    
+    private func configureStackView(koreaCovidOverview: CovidOverview) {
+        self.domesticCntLbl.text = "\(koreaCovidOverview.totalCase) 명"
+        self.domesticNewCntLbl.text = "\(koreaCovidOverview.newCase) 명"
     }
     
     private func fetchCovidOverview(
