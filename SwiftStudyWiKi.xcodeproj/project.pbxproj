@@ -169,6 +169,25 @@
 			path = Ch.2_LED;
 			sourceTree = "<group>";
 		};
+		76D675E82822D6BA00A6EE21 /* Part.2 */ = {
+			isa = PBXGroup;
+			children = (
+				76DF614627FB426E00E4F436 /* Ch.1_QuotesGenerator */,
+				76A90FDD28030E8E007A3C81 /* Ch.2_LED */,
+				760524802815B3A700C3C243 /* Ch.5_Diary */,
+				76A587812821604800D8D3DB /* Ch.7_Weather */,
+				76A587882821765A00D8D3DB /* Ch.8_Covid */,
+			);
+			path = Part.2;
+			sourceTree = "<group>";
+		};
+		76D675E92822D6D500A6EE21 /* Part.3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Part.3;
+			sourceTree = "<group>";
+		};
 		76D8DB6D27CE1BAD004F90E0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,11 +195,8 @@
 				763AF27027CBABF3004040E2 /* SubjectTableCell.swift */,
 				763AF26E27CA6F81004040E2 /* MyNavigationController.swift */,
 				76D8DB6E27CE1BC7004F90E0 /* PrefetchStudy */,
-				76DF614627FB426E00E4F436 /* Ch.1_QuotesGenerator */,
-				76A90FDD28030E8E007A3C81 /* Ch.2_LED */,
-				760524802815B3A700C3C243 /* Ch.5_Diary */,
-				76A587812821604800D8D3DB /* Ch.7_Weather */,
-				76A587882821765A00D8D3DB /* Ch.8_Covid */,
+				76D675E82822D6BA00A6EE21 /* Part.2 */,
+				76D675E92822D6D500A6EE21 /* Part.3 */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -210,8 +226,7 @@
 				76DF614927FB46D900E4F436 /* Quotes.swift */,
 				76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */,
 			);
-			name = Ch.1_QuotesGenerator;
-			path = PrefetchStudy/Ch.1_QuotesGenerator;
+			path = Ch.1_QuotesGenerator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

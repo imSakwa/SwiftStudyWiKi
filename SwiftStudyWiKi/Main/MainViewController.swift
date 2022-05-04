@@ -11,7 +11,7 @@ import Then
 
 class MainViewController: UIViewController {
 
-    let cellTitleArr = [
+    let cellTitleArr = [[
         "1. Prefetch",
         "2. 명언 생성기",
         "3. LED",
@@ -20,6 +20,10 @@ class MainViewController: UIViewController {
         "6. ?????",
         "7. Weather",
         "8. Covid",
+    ],
+    [
+     "1.Spotify"
+    ]
     ]
     
     let naviBarView = UIView().then {
@@ -105,7 +109,7 @@ class MainViewController: UIViewController {
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cellTitleArr.count
+        return cellTitleArr[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -113,7 +117,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.titleLbl.text = cellTitleArr[indexPath.row]
+        cell.titleLbl.text = cellTitleArr[indexPath.section][indexPath.row]
         cell.nextIcon.tintColor = .black
         cell.selectionStyle = .none
         
@@ -121,7 +125,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return cellTitleArr.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -129,29 +133,39 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         backBarButtonItem.tintColor = .black
         self.navigationItem.backBarButtonItem = backBarButtonItem
 
-        switch indexPath.row {
-        case 0:
-            let vc = PrefetchViewController()
+        if indexPath.section == 0 {
+            switch indexPath.row {
+            case 0:
+                self.navigationController?.pushViewController(PrefetchViewController(), animated: true)
+                
+            case 1:
+                self.navigationController?.pushViewController(QuotesGeneratorViewController(), animated: true)
+                
+            case 2:
+                self.navigationController?.pushViewController(LEDViewController(), animated: true)
+                
+            case 4:
+                self.navigationController?.pushViewController(DiaryTabBarController(), animated: true)
+                
+            case 6:
+                self.navigationController?.pushViewController(WeatherViewController(), animated: true)
+                
+            case 7:
+                self.navigationController?.pushViewController(CovidViewController(), animated: true)
+                
+            default:
+                break
+            }
             
-            self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.section == 1 {
+            switch indexPath.row {
+            case 0:
+                self.navigationController?.pushViewController(CovidViewController(), animated: true)
             
-        case 1:
-            self.navigationController?.pushViewController(QuotesGeneratorViewController(), animated: true)
-            
-        case 2:
-            self.navigationController?.pushViewController(LEDViewController(), animated: true)
-            
-        case 4:
-            self.navigationController?.pushViewController(DiaryTabBarController(), animated: true)
-            
-        case 6:
-            self.navigationController?.pushViewController(WeatherViewController(), animated: true)
-            
-        case 7:
-            self.navigationController?.pushViewController(CovidViewController(), animated: true)
-            
-        default:
-            break
+            default:
+                break
+            }
         }
+       
     }
 }
