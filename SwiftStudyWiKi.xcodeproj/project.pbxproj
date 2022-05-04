@@ -35,6 +35,7 @@
 		76A5878A2821767500D8D3DB /* CovidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A587892821767500D8D3DB /* CovidViewController.swift */; };
 		76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FDE2803110C007A3C81 /* LEDViewController.swift */; };
 		76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FE0280316B0007A3C81 /* SettingViewController.swift */; };
+		76D675E72822CD9000A6EE21 /* CovidOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675E62822CD9000A6EE21 /* CovidOverView.swift */; };
 		76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */; };
 		76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB7227CE1D81004F90E0 /* SubjectData.swift */; };
 		76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */; };
@@ -65,6 +66,7 @@
 		76A587892821767500D8D3DB /* CovidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidViewController.swift; sourceTree = "<group>"; };
 		76A90FDE2803110C007A3C81 /* LEDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDViewController.swift; sourceTree = "<group>"; };
 		76A90FE0280316B0007A3C81 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		76D675E62822CD9000A6EE21 /* CovidOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidOverView.swift; sourceTree = "<group>"; };
 		76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchViewController.swift; sourceTree = "<group>"; };
 		76D8DB7227CE1D81004F90E0 /* SubjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectData.swift; sourceTree = "<group>"; };
 		76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesGeneratorViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				76A587892821767500D8D3DB /* CovidViewController.swift */,
 				760DE87428217EA100F8683E /* CovidDetailViewController.swift */,
 				760DE8762821870300F8683E /* CovidDetailTableCell.swift */,
+				76D675E62822CD9000A6EE21 /* CovidOverView.swift */,
 			);
 			path = Ch.8_Covid;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				760C973627F9A4A50051F8BF /* ViewModel.swift in Sources */,
 				76DF614A27FB46D900E4F436 /* Quotes.swift in Sources */,
 				76A5878528216F8200D8D3DB /* WeatherInformation.swift in Sources */,
+				76D675E72822CD9000A6EE21 /* CovidOverView.swift in Sources */,
 				76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */,
 				76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */,
 				760C973827F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift in Sources */,

@@ -52,6 +52,45 @@ class CovidViewController: UIViewController {
         self.view.backgroundColor = .white
         
         setupView()
+        
+        self.fetchCovidOverview(completionHandler: { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case let .success(result):
+                debugPrint("success \(result)")
+                
+            case let.failure(error):
+                debugPrint("failure \(error)")
+            }
+            
+        })
+    }
+    
+    private func fetchCovidOverview(
+        completionHandler: @escaping (Result<CityCovidOverview, Error>) -> Void
+    ) {
+        let url = "https://api.corona-19.kr/korea/country/new/"
+        let param = [
+            "serviceKey": "AUS6MojRdvVFi9WZIpucnEGz4eChKys8g"
+        ]
+        
+        AF.request(url, method: .get, parameters: param).responseData(completionHandler: { response in
+            switch response.result {
+            case let .success(data):
+                do {
+                    let decoder = JSONDecoder()
+                    let result = try decoder.decode(CityCovidOverview.self, from: data)
+                    completionHandler(.success(result))
+                } catch {
+                    completionHandler(.failure(error))
+                }
+                
+            case let .failure(error):
+                completionHandler(.failure(error))
+            }
+            
+        })
     }
     
     private func setupView() {
