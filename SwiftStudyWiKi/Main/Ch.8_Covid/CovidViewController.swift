@@ -92,6 +92,8 @@ class CovidViewController: UIViewController {
     }
     
     private func configureChartView(covidOverviewList: [CovidOverview]) {
+        self.chartView.delegate = self
+        
         let entries = covidOverviewList.compactMap { [weak self] overview -> PieChartDataEntry? in
             guard let self = self else { return nil }
             
@@ -179,4 +181,14 @@ class CovidViewController: UIViewController {
         }
     }
 
+}
+
+extension CovidViewController: ChartViewDelegate {
+    func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
+        let covidDetailVC = CovidDetailViewController()
+        guard let covidOverview = entry.data as? CovidOverview else {return}
+        covidDetailVC.covidOverview = covidOverview
+        
+        self.navigationController?.pushViewController(covidDetailVC, animated: true)
+    }
 }

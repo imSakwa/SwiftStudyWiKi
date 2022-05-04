@@ -21,20 +21,39 @@ class CovidDetailViewController: UITableViewController {
         "지역발생 신규 확진자"
     ]
     
-    let numArr: [String] = [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-    ]
+    var numArr: [String] = []
+    
+    var covidOverview: CovidOverview?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.isNavigationBarHidden = false
+        
         tableView.register(CovidDetailTableCell.self, forCellReuseIdentifier: "Cell")
+        
+        configureView()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    private func configureView() {
+        guard let covidOverview = covidOverview else {
+            return
+        }
+        self.title = covidOverview.countryName
+        
+        numArr.append("\(covidOverview.newCase)명")
+        numArr.append("\(covidOverview.totalCase)명")
+        numArr.append("\(covidOverview.recovered)명")
+        numArr.append("\(covidOverview.death)명")
+        numArr.append("\(covidOverview.percentage)%")
+        numArr.append("\(covidOverview.newFcase)명")
+        numArr.append("\(covidOverview.newCcase)명")
+        
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
