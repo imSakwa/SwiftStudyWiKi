@@ -69,7 +69,7 @@ class SpotifyEnterEmailViewController: UIViewController {
     }
     
     @objc private func tapNextBtn(_ sender: UIButton) {
-        
+        self.navigationController?.pushViewController(SpotifyMainViewController(), animated: true)
     }
     
     private func setupView() {
