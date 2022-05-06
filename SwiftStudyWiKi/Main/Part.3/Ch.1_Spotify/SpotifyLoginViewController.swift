@@ -41,6 +41,7 @@ class SpotifyLoginViewController: UIViewController {
     
     let emailLoginBtn = UIButton().then {
         $0.setTitle("이메일/비밀번호로 계속하기", for: .normal)
+        $0.tag = 0
     }
     
     let googleLoginBtn = UIButton().then {
@@ -48,6 +49,7 @@ class SpotifyLoginViewController: UIViewController {
         $0.setImage(UIImage(named: "logo_google"), for: .normal)
         $0.imageEdgeInsets = UIEdgeInsets(top: 0, left: -119, bottom: 0, right: 0)
         $0.titleEdgeInsets = UIEdgeInsets(top: 0, left: -31, bottom: 0, right: 0)
+        $0.tag = 1
     }
     
     let appleLoginBtn = UIButton().then {
@@ -55,6 +57,7 @@ class SpotifyLoginViewController: UIViewController {
         $0.setImage(UIImage(named: "logo_apple"), for: .normal)
         $0.imageEdgeInsets = UIEdgeInsets(top: 0, left: -119, bottom: 0, right: 0)
         $0.titleEdgeInsets = UIEdgeInsets(top: 0, left: -31, bottom: 0, right: 0)
+        $0.tag = 2
     }
     
     override func viewDidLoad() {
@@ -65,9 +68,22 @@ class SpotifyLoginViewController: UIViewController {
             $0.layer.cornerRadius = 30
             $0.layer.borderColor = UIColor.white.cgColor
             $0.layer.borderWidth = 1
+            $0.addTarget(self, action: #selector(tapLoginBtn), for: .touchUpInside)
         }
         
         setupView()
+    }
+    
+    @objc private func tapLoginBtn(_ sender: UIButton) {
+        if sender.tag == 0 {
+            self.navigationController?.pushViewController(SpotifyEnterEmailViewController(), animated: true)
+            
+        } else if sender.tag == 1 {
+            
+            
+        } else {
+            
+        }
     }
 
     private func setupView() {
