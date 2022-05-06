@@ -36,6 +36,9 @@
 		76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FDE2803110C007A3C81 /* LEDViewController.swift */; };
 		76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FE0280316B0007A3C81 /* SettingViewController.swift */; };
 		76D675E72822CD9000A6EE21 /* CovidOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675E62822CD9000A6EE21 /* CovidOverView.swift */; };
+		76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */; };
+		76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */; };
+		76D675F028255E4E00A6EE21 /* SpotifyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675EF28255E4E00A6EE21 /* SpotifyMainViewController.swift */; };
 		76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */; };
 		76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB7227CE1D81004F90E0 /* SubjectData.swift */; };
 		76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */; };
@@ -67,6 +70,9 @@
 		76A90FDE2803110C007A3C81 /* LEDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDViewController.swift; sourceTree = "<group>"; };
 		76A90FE0280316B0007A3C81 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		76D675E62822CD9000A6EE21 /* CovidOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidOverView.swift; sourceTree = "<group>"; };
+		76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
+		76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyEnterEmailViewController.swift; sourceTree = "<group>"; };
+		76D675EF28255E4E00A6EE21 /* SpotifyMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyMainViewController.swift; sourceTree = "<group>"; };
 		76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchViewController.swift; sourceTree = "<group>"; };
 		76D8DB7227CE1D81004F90E0 /* SubjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectData.swift; sourceTree = "<group>"; };
 		76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesGeneratorViewController.swift; sourceTree = "<group>"; };
@@ -184,8 +190,19 @@
 		76D675E92822D6D500A6EE21 /* Part.3 */ = {
 			isa = PBXGroup;
 			children = (
+				76D675EA282559E800A6EE21 /* Ch.1_Spotify */,
 			);
 			path = Part.3;
+			sourceTree = "<group>";
+		};
+		76D675EA282559E800A6EE21 /* Ch.1_Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */,
+				76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */,
+				76D675EF28255E4E00A6EE21 /* SpotifyMainViewController.swift */,
+			);
+			path = Ch.1_Spotify;
 			sourceTree = "<group>";
 		};
 		76D8DB6D27CE1BAD004F90E0 /* Main */ = {
@@ -320,13 +337,16 @@
 				76A58783282160B300D8D3DB /* WeatherViewController.swift in Sources */,
 				760524822815B43900C3C243 /* DiaryViewController.swift in Sources */,
 				760DE8772821870300F8683E /* CovidDetailTableCell.swift in Sources */,
+				76D675F028255E4E00A6EE21 /* SpotifyMainViewController.swift in Sources */,
 				76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */,
 				763AF27127CBABF3004040E2 /* SubjectTableCell.swift in Sources */,
 				763AF26F27CA6F81004040E2 /* MyNavigationController.swift in Sources */,
 				760524862815B7DD00C3C243 /* DiaryFavoItemViewController.swift in Sources */,
 				76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */,
+				76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */,
 				76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */,
 				76A5878A2821767500D8D3DB /* CovidViewController.swift in Sources */,
+				76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */,
 				764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */,
 				760C973A27F9B4370051F8BF /* Model.swift in Sources */,
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,
