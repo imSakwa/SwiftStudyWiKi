@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import Then
+import FirebaseAuth
 
 class SpotifyEnterEmailViewController: UIViewController {
 
@@ -69,6 +70,41 @@ class SpotifyEnterEmailViewController: UIViewController {
     }
     
     @objc private func tapNextBtn(_ sender: UIButton) {
+        let email = emailTextField.text ?? ""
+        let pw = pwTextField.text ?? ""
+        
+        // 신규 사용자 생성
+        Auth.auth().createUser(withEmail: email, password: pw) { [weak self] authResult, error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                let code = (error as NSError).code
+                
+                switch code {
+                case 17007: //이미 가입한 계정
+                    self.loginUser(withEmail: email, pw: pw)
+                default:
+                    self.errorLbl.text = error.localizedDescription
+                }
+            } else {
+                self.showMainVC()
+            }
+        }
+    }
+    
+    private func loginUser(withEmail email: String, pw: String) {
+        Auth.auth().signIn(withEmail: email, password: pw) { [weak self] _, error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                self.errorLbl.text = error.localizedDescription
+            } else {
+                self.showMainVC()
+            }
+        }
+    }
+    
+    private func showMainVC() {
         self.navigationController?.pushViewController(SpotifyMainViewController(), animated: true)
     }
     
@@ -101,7 +137,7 @@ class SpotifyEnterEmailViewController: UIViewController {
         }
         
         errorLbl.snp.makeConstraints {
-            $0.top.equalTo(stack.snp.bottom)
+            $0.top.equalTo(stack.snp.bottom).offset(5)
         }
         
         nextBtn.snp.makeConstraints {

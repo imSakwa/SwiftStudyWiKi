@@ -39,6 +39,8 @@
 		76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */; };
 		76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */; };
 		76D675F028255E4E00A6EE21 /* SpotifyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675EF28255E4E00A6EE21 /* SpotifyMainViewController.swift */; };
+		76D675F22825728D00A6EE21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76D675F12825728D00A6EE21 /* GoogleService-Info.plist */; };
+		76D675F52825733F00A6EE21 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 76D675F42825733F00A6EE21 /* FirebaseAuth */; };
 		76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */; };
 		76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB7227CE1D81004F90E0 /* SubjectData.swift */; };
 		76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */; };
@@ -73,6 +75,7 @@
 		76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyEnterEmailViewController.swift; sourceTree = "<group>"; };
 		76D675EF28255E4E00A6EE21 /* SpotifyMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyMainViewController.swift; sourceTree = "<group>"; };
+		76D675F12825728D00A6EE21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchViewController.swift; sourceTree = "<group>"; };
 		76D8DB7227CE1D81004F90E0 /* SubjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectData.swift; sourceTree = "<group>"; };
 		76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesGeneratorViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 				7643FBAC2822C131002D9894 /* Charts in Frameworks */,
 				760DE88F2822C06A00F8683E /* SnapKit in Frameworks */,
 				760DE88A2822C02900F8683E /* RxSwift in Frameworks */,
+				76D675F52825733F00A6EE21 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +145,7 @@
 				764125FC27CA6D2B0041EC89 /* Assets.xcassets */,
 				764125FE27CA6D2B0041EC89 /* LaunchScreen.storyboard */,
 				7641260127CA6D2B0041EC89 /* Info.plist */,
+				76D675F12825728D00A6EE21 /* GoogleService-Info.plist */,
 			);
 			path = SwiftStudyWiKi;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				7643FBA52822C0AF002D9894 /* Then */,
 				7643FBA82822C0F6002D9894 /* Alamofire */,
 				7643FBAB2822C131002D9894 /* Charts */,
+				76D675F42825733F00A6EE21 /* FirebaseAuth */,
 			);
 			productName = SwiftStudyWiKi;
 			productReference = 764125F027CA6D2A0041EC89 /* SwiftStudyWiKi.app */;
@@ -305,6 +311,7 @@
 				7643FBA42822C0AF002D9894 /* XCRemoteSwiftPackageReference "Then" */,
 				7643FBA72822C0F6002D9894 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				7643FBAA2822C131002D9894 /* XCRemoteSwiftPackageReference "Charts" */,
+				76D675F32825733F00A6EE21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 764125F127CA6D2A0041EC89 /* Products */;
 			projectDirPath = "";
@@ -322,6 +329,7 @@
 			files = (
 				7641260027CA6D2B0041EC89 /* LaunchScreen.storyboard in Resources */,
 				764125FD27CA6D2B0041EC89 /* Assets.xcassets in Resources */,
+				76D675F22825728D00A6EE21 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +622,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		76D675F32825733F00A6EE21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -651,6 +667,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7643FBAA2822C131002D9894 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		76D675F42825733F00A6EE21 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76D675F32825733F00A6EE21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

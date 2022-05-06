@@ -8,10 +8,11 @@
 import UIKit
 import SnapKit
 import Then
+import FirebaseAuth
 
 class SpotifyMainViewController: UIViewController {
 
-    let firstlbl = UILabel().then {
+    let welcomelbl = UILabel().then {
         $0.text = "환양합니다."
         $0.font = .boldSystemFont(ofSize: 25)
         $0.numberOfLines = 0
@@ -37,27 +38,41 @@ class SpotifyMainViewController: UIViewController {
         super.viewWillAppear(animated)
         
         self.navigationController?.isNavigationBarHidden = true
+        
+        let email = Auth.auth().currentUser?.email ?? "고객"
+        
+        welcomelbl.text = """
+         환영합니다.
+         \(email)님
+         """
     }
     
     @objc private func tapLogoutBtn() {
-        self.navigationController?.popViewController(animated: true)
+        let firebaseAuth = Auth.auth()
+        
+        do {
+            try firebaseAuth.signOut()
+            self.navigationController?.popToRootViewController(animated: true)
+        } catch let sighOutError as NSError {
+            print("Error : \(sighOutError.localizedDescription)")
+        }
     }
     
     private func setupView() {
-        view.addSubview(firstlbl)
+        view.addSubview(welcomelbl)
         view.addSubview(logoutBtn)
         
         setupConstraint()
     }
     
     private func setupConstraint() {
-        firstlbl.snp.makeConstraints {
+        welcomelbl.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.centerY.equalToSuperview()
         }
         
         logoutBtn.snp.makeConstraints {
-            $0.top.equalTo(firstlbl.snp.bottom)
+            $0.top.equalTo(welcomelbl.snp.bottom)
             $0.centerX.equalToSuperview()
         }
     }
