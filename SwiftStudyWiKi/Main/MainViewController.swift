@@ -22,7 +22,8 @@ class MainViewController: UIViewController {
         "8. Covid",
     ],
     [
-     "1.Spotify"
+     "1. Spotify"
+     "2. Drink"
     ]
     ]
     
@@ -161,6 +162,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             switch indexPath.row {
             case 0:
                 self.navigationController?.pushViewController(SpotifyLoginViewController(), animated: true)
+                
+            case 1:
+                self.navigationController?.pushViewController(DrinkAlarmListViewController(style: .grouped), animated: true)
             
             default:
                 break

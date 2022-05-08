@@ -19,6 +19,10 @@
 		760DE8882822C02900F8683E /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 760DE8872822C02900F8683E /* RxRelay */; };
 		760DE88A2822C02900F8683E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 760DE8892822C02900F8683E /* RxSwift */; };
 		760DE88F2822C06A00F8683E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 760DE88E2822C06A00F8683E /* SnapKit */; };
+		763181312828039700BA27BE /* DrinkAlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763181302828039700BA27BE /* DrinkAlarmListViewController.swift */; };
+		7631813328280B2600BA27BE /* DrinkAlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631813228280B2600BA27BE /* DrinkAlarmTableViewCell.swift */; };
+		7631813528280CA300BA27BE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631813428280CA300BA27BE /* Alert.swift */; };
+		7631813728280E6F00BA27BE /* DrinkAddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631813628280E6F00BA27BE /* DrinkAddAlarmViewController.swift */; };
 		763AF26F27CA6F81004040E2 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AF26E27CA6F81004040E2 /* MyNavigationController.swift */; };
 		763AF27127CBABF3004040E2 /* SubjectTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AF27027CBABF3004040E2 /* SubjectTableCell.swift */; };
 		764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764125F327CA6D2A0041EC89 /* AppDelegate.swift */; };
@@ -58,6 +62,10 @@
 		760DE87428217EA100F8683E /* CovidDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDetailViewController.swift; sourceTree = "<group>"; };
 		760DE8762821870300F8683E /* CovidDetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDetailTableCell.swift; sourceTree = "<group>"; };
 		7631812E2827FAC200BA27BE /* SwiftStudyWiKi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftStudyWiKi.entitlements; sourceTree = "<group>"; };
+		763181302828039700BA27BE /* DrinkAlarmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAlarmListViewController.swift; sourceTree = "<group>"; };
+		7631813228280B2600BA27BE /* DrinkAlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAlarmTableViewCell.swift; sourceTree = "<group>"; };
+		7631813428280CA300BA27BE /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		7631813628280E6F00BA27BE /* DrinkAddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAddAlarmViewController.swift; sourceTree = "<group>"; };
 		763AF26E27CA6F81004040E2 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		763AF27027CBABF3004040E2 /* SubjectTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableCell.swift; sourceTree = "<group>"; };
 		764125F027CA6D2A0041EC89 /* SwiftStudyWiKi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudyWiKi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +127,17 @@
 				760524852815B7DD00C3C243 /* DiaryFavoItemViewController.swift */,
 			);
 			path = Ch.5_Diary;
+			sourceTree = "<group>";
+		};
+		7631812F2828035100BA27BE /* Ch.4_Drink */ = {
+			isa = PBXGroup;
+			children = (
+				763181302828039700BA27BE /* DrinkAlarmListViewController.swift */,
+				7631813228280B2600BA27BE /* DrinkAlarmTableViewCell.swift */,
+				7631813428280CA300BA27BE /* Alert.swift */,
+				7631813628280E6F00BA27BE /* DrinkAddAlarmViewController.swift */,
+			);
+			path = Ch.4_Drink;
 			sourceTree = "<group>";
 		};
 		764125E727CA6D2A0041EC89 = {
@@ -199,6 +218,7 @@
 		76D675E92822D6D500A6EE21 /* Part.3 */ = {
 			isa = PBXGroup;
 			children = (
+				7631812F2828035100BA27BE /* Ch.4_Drink */,
 				76D675EA282559E800A6EE21 /* Ch.1_Spotify */,
 			);
 			path = Part.3;
@@ -358,16 +378,20 @@
 				760524862815B7DD00C3C243 /* DiaryFavoItemViewController.swift in Sources */,
 				76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */,
 				76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */,
+				7631813728280E6F00BA27BE /* DrinkAddAlarmViewController.swift in Sources */,
 				76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */,
+				763181312828039700BA27BE /* DrinkAlarmListViewController.swift in Sources */,
 				76A5878A2821767500D8D3DB /* CovidViewController.swift in Sources */,
 				76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */,
 				764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */,
 				760C973A27F9B4370051F8BF /* Model.swift in Sources */,
+				7631813528280CA300BA27BE /* Alert.swift in Sources */,
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,
 				760C973627F9A4A50051F8BF /* ViewModel.swift in Sources */,
 				76DF614A27FB46D900E4F436 /* Quotes.swift in Sources */,
 				76A5878528216F8200D8D3DB /* WeatherInformation.swift in Sources */,
 				76D675E72822CD9000A6EE21 /* CovidOverView.swift in Sources */,
+				7631813328280B2600BA27BE /* DrinkAlarmTableViewCell.swift in Sources */,
 				76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */,
 				76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */,
 				760C973827F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift in Sources */,
