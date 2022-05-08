@@ -8,9 +8,11 @@
 import UIKit
 import SnapKit
 import Then
+import GoogleSignIn
+import Firebase
 
 class SpotifyLoginViewController: UIViewController {
-
+    
     let loginStack = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 0
@@ -79,8 +81,16 @@ class SpotifyLoginViewController: UIViewController {
             self.navigationController?.pushViewController(SpotifyEnterEmailViewController(), animated: true)
             
         } else if sender.tag == 1 {
+            let signInConfig = GIDConfiguration.init(clientID: (FirebaseApp.app()?.options.clientID ?? ""))
             
-            
+            GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
+                guard error == nil else { return }
+                guard let user = user else { return }
+                
+                let mainVC = SpotifyMainViewController()
+                mainVC.loginType = .google
+                self.navigationController?.pushViewController(mainVC, animated: true)
+            }
         } else {
             
         }

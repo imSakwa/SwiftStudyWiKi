@@ -9,9 +9,17 @@ import UIKit
 import SnapKit
 import Then
 import FirebaseAuth
+import GoogleSignIn
 
+enum LoginType {
+    case email
+    case google
+    case apple
+}
 class SpotifyMainViewController: UIViewController {
 
+    var loginType: LoginType = .email
+    
     let welcomelbl = UILabel().then {
         $0.text = "환양합니다."
         $0.font = .boldSystemFont(ofSize: 25)
@@ -48,14 +56,28 @@ class SpotifyMainViewController: UIViewController {
     }
     
     @objc private func tapLogoutBtn() {
-        let firebaseAuth = Auth.auth()
-        
-        do {
-            try firebaseAuth.signOut()
+        switch loginType {
+        case .email:
+            let firebaseAuth = Auth.auth()
+            
+            do {
+                try firebaseAuth.signOut()
+                self.navigationController?.popToRootViewController(animated: true)
+            } catch let sighOutError as NSError {
+                print("Error : \(sighOutError.localizedDescription)")
+            }
+            
+        case .google:
+            GIDSignIn.sharedInstance.signOut()
             self.navigationController?.popToRootViewController(animated: true)
-        } catch let sighOutError as NSError {
-            print("Error : \(sighOutError.localizedDescription)")
+            
+        case .apple:
+            break
+            
+        default:
+            break
         }
+      
     }
     
     private func setupView() {

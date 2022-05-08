@@ -105,6 +105,8 @@ class SpotifyEnterEmailViewController: UIViewController {
     }
     
     private func showMainVC() {
+        let mainVC = SpotifyMainViewController()
+        mainVC.loginType = .email
         self.navigationController?.pushViewController(SpotifyMainViewController(), animated: true)
     }
     
