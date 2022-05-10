@@ -218,8 +218,8 @@
 		76D675E92822D6D500A6EE21 /* Part.3 */ = {
 			isa = PBXGroup;
 			children = (
-				7631812F2828035100BA27BE /* Ch.4_Drink */,
 				76D675EA282559E800A6EE21 /* Ch.1_Spotify */,
+				7631812F2828035100BA27BE /* Ch.4_Drink */,
 			);
 			path = Part.3;
 			sourceTree = "<group>";

@@ -16,8 +16,9 @@ import CryptoKit
 
 class SpotifyLoginViewController: UIViewController, ASAuthorizationControllerPresentationContextProviding {
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
-        <#code#>
+        return ASPresentationAnchor()
     }
+    
     
     
     private var currentNonce: String?
@@ -217,7 +218,7 @@ extension SpotifyLoginViewController: ASAuthorizationControllerDelegate {
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
             
             guard let nonce = currentNonce else {
-                
+                return 
             }
             
             guard let appleIDToken = appleIDCredential.identityToken else {

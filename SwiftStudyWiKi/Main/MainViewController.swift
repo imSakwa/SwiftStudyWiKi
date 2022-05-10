@@ -22,8 +22,8 @@ class MainViewController: UIViewController {
         "8. Covid",
     ],
     [
-     "1. Spotify"
-     "2. Drink"
+     "1. Spotify",
+     "2. Drink",
     ]
     ]
     
