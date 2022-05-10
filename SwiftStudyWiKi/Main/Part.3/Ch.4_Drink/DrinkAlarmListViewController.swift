@@ -45,28 +45,25 @@ class DrinkAlarmListViewController: UITableViewController {
     }
     
     @objc private func tapAddBtn() {
-        if #available(iOS 13.4, *) {
-            let addVC = DrinkAddAlarmViewController()
-            addVC.pickedDate = { [weak self] date in
-                guard let self = self else { return }
-                
-                var alertList = self.alertList()
-                let newAlert = Alert(date: date, isOn: true)
-                
-                alertList.append(newAlert)
-                
-                alertList.sort { $0.date < $1.date } // 시간 순서대로 정렬
-                
-                self.alerts = alertList
-                UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alerts), forKey: "alerts")
-                
-                self.tableView.reloadData()
-            }
+        let addVC = DrinkAddAlarmViewController()
+        
+        addVC.pickedDate = { [weak self] date in
+            guard let self = self else { return }
             
-            self.present(addVC, animated: true)
-        } else {
-            print("버전 낮음..")
+            var alertList = self.alertList()
+            let newAlert = Alert(date: date, isOn: true)
+            
+            alertList.append(newAlert)
+            
+            alertList.sort { $0.date < $1.date } // 시간 순서대로 정렬
+            
+            self.alerts = alertList
+            UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alerts), forKey: "alerts")
+            
+            self.tableView.reloadData()
         }
+        
+        self.present(addVC, animated: true)
     }
     
     private func alertList() -> [Alert] {

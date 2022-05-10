@@ -9,7 +9,6 @@ import UIKit
 import SnapKit
 import Then
 
-@available(iOS 13.4, *)
 class DrinkAddAlarmViewController: UIViewController {
     
     var pickedDate: ((_ date: Date) -> Void)?
@@ -29,17 +28,14 @@ class DrinkAddAlarmViewController: UIViewController {
     }
     
     let timePicker = UIDatePicker().then {
-        if #available(iOS 14.0, *) {
-            $0.preferredDatePickerStyle = .inline
-        } else {
-            // Fallback on earlier versions
-        }
+        $0.preferredDatePickerStyle = .inline
         $0.locale = Locale(identifier: "ko ")
         $0.minuteInterval = 1
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
         
         self.title = "알람 추가"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: cancelBtn)
@@ -80,5 +76,11 @@ class DrinkAddAlarmViewController: UIViewController {
         
     }
     
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
     
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 }
