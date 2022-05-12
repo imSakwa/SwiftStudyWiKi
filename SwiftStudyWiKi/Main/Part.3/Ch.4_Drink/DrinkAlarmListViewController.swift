@@ -31,7 +31,9 @@ class DrinkAlarmListViewController: UITableViewController {
         
         self.navigationController?.isNavigationBarHidden = false
         self.title = "물마시기"
+        
         addBtn.addTarget(self, action: #selector(tapAddBtn), for: .touchUpInside)
+        
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: addBtn)
         self.tableView.register(DrinkAlarmTableViewCell.self, forCellReuseIdentifier: "listCell")
         self.tableView.delegate = self
@@ -44,26 +46,26 @@ class DrinkAlarmListViewController: UITableViewController {
         alerts = alertList()
     }
     
-    @objc private func tapAddBtn() {
+    @objc func tapAddBtn() {
         let addVC = DrinkAddAlarmViewController()
         
         addVC.pickedDate = { [weak self] date in
             guard let self = self else { return }
-            
+
             var alertList = self.alertList()
             let newAlert = Alert(date: date, isOn: true)
-            
+
             alertList.append(newAlert)
-            
+
             alertList.sort { $0.date < $1.date } // 시간 순서대로 정렬
-            
+
             self.alerts = alertList
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alerts), forKey: "alerts")
-            
+
             self.tableView.reloadData()
         }
         
-        self.present(addVC, animated: true)
+        present(addVC, animated: true, completion: nil)
     }
     
     private func alertList() -> [Alert] {
