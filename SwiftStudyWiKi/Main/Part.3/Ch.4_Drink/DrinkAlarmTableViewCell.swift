@@ -21,7 +21,7 @@ class DrinkAlarmTableViewCell: UITableViewCell {
         $0.font = .systemFont(ofSize: 50, weight: .light)
     }
     
-    let onoffSwitch = UISwitch().then {
+    lazy var onoffSwitch = UISwitch().then {
         $0.addTarget(self, action: #selector(changeOnOff), for: .valueChanged)
     }
     
@@ -42,10 +42,11 @@ class DrinkAlarmTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupView() {
-        contentView.addSubview(amLbl)
-        contentView.addSubview(timeLbl)
-        contentView.addSubview(onoffSwitch)
+    private func setupView() {        
+        [amLbl, timeLbl, onoffSwitch]
+            .forEach {
+                contentView.addSubview($0)
+            }
         
         setupConstraints()
     }

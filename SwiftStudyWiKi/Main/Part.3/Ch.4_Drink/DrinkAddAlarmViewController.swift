@@ -13,12 +13,12 @@ class DrinkAddAlarmViewController: UIViewController {
     
     var pickedDate: ((_ date: Date) -> Void)?
     
-    let cancelBtn = UIButton().then {
+    lazy var cancelBtn = UIButton().then {
         $0.setTitle("취소", for: .normal)
         $0.addTarget(self, action: #selector(tapCancelBtn), for: .touchUpInside)
     }
     
-    let saveBtn = UIButton().then {
+    lazy var saveBtn = UIButton().then {
         $0.setTitle("저장", for: .normal)
         $0.addTarget(self, action: #selector(tapSaveBtn), for: .touchUpInside)
     }
@@ -54,8 +54,10 @@ class DrinkAddAlarmViewController: UIViewController {
     }
     
     private func setupView() {
-        view.addSubview(timeLbl)
-        view.addSubview(timePicker)
+        [timeLbl, timePicker]
+            .forEach {
+                view.addSubview($0)
+            }
         
         
         setupConstraint()

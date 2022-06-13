@@ -10,21 +10,23 @@ import SnapKit
 import Then
 
 class MainViewController: UIViewController {
-
-    let cellTitleArr = [[
-        "1. Prefetch",
-        "2. 명언 생성기",
-        "3. LED",
-        "4. ????",
-        "5. Diary",
-        "6. ?????",
-        "7. Weather",
-        "8. Covid",
-    ],
-    [
-     "1. Spotify",
-     "2. Drink",
-    ]
+    
+    let cellTitleArr = [
+        [
+            "1. Prefetch",
+            "2. 명언 생성기",
+            "3. LED",
+            "4. ????",
+            "5. Diary",
+            "6. ?????",
+            "7. Weather",
+            "8. Covid"
+        ],
+        [
+            "0. Alamofire 연습",
+            "1. Spotify",
+            "2. Drink",
+        ]
     ]
     
     let naviBarView = UIView().then {
@@ -164,6 +166,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
                 self.navigationController?.pushViewController(SpotifyLoginViewController(), animated: true)
                 
             case 1:
+                self.navigationController?.pushViewController(SpotifyLoginViewController(), animated: true)
+                
+            case 2:
                 self.navigationController?.pushViewController(DrinkAlarmListViewController(style: .grouped), animated: true)
             
             default:
