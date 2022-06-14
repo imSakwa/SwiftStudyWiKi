@@ -178,9 +178,17 @@
 		76A4D0492857855E00DCC34C /* Ch.0_Alamofire */ = {
 			isa = PBXGroup;
 			children = (
+				76A4D04C285785D200DCC34C /* Network */,
 				76A4D04A2857858F00DCC34C /* AlamofireViewController.swift */,
 			);
 			path = Ch.0_Alamofire;
+			sourceTree = "<group>";
+		};
+		76A4D04C285785D200DCC34C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		76A587812821604800D8D3DB /* Ch.7_Weather */ = {
