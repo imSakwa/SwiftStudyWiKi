@@ -163,7 +163,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         } else if indexPath.section == 1 {
             switch indexPath.row {
             case 0:
-                self.navigationController?.pushViewController(SpotifyLoginViewController(), animated: true)
+                self.navigationController?.pushViewController(AlamofireViewController(), animated: true)
                 
             case 1:
                 self.navigationController?.pushViewController(SpotifyLoginViewController(), animated: true)
