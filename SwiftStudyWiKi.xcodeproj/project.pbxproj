@@ -51,6 +51,7 @@
 		76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */; };
 		76DF614A27FB46D900E4F436 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF614927FB46D900E4F436 /* Quotes.swift */; };
 		76EE132F2826BCD1000C4E59 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 76EE132E2826BCD1000C4E59 /* GoogleSignIn */; };
+		76F62E3C2866BDD000028E5C /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F62E3B2866BDD000028E5C /* TestVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		76D8DB7227CE1D81004F90E0 /* SubjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectData.swift; sourceTree = "<group>"; };
 		76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesGeneratorViewController.swift; sourceTree = "<group>"; };
 		76DF614927FB46D900E4F436 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		76F62E3B2866BDD000028E5C /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			children = (
 				76A4D04C285785D200DCC34C /* Network */,
 				76A4D04A2857858F00DCC34C /* AlamofireViewController.swift */,
+				76F62E3B2866BDD000028E5C /* TestVC.swift */,
 			);
 			path = Ch.0_Alamofire;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */,
 				760C973827F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift in Sources */,
 				76A587872821743C00D8D3DB /* ErrorMsg.swift in Sources */,
+				76F62E3C2866BDD000028E5C /* TestVC.swift in Sources */,
 				760524842815B70C00C3C243 /* DiaryTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
