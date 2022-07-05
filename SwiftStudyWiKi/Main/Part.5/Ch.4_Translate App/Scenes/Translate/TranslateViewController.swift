@@ -9,11 +9,6 @@ import UIKit
 import SnapKit
 import Then
 
-enum `Type` {
-    case source
-    case target
-}
-
 final class TranslateViewController: UIViewController {
     private var sourceLanguage: Language = .ko
     private var targetLanguage: Language = .en
@@ -58,10 +53,12 @@ final class TranslateViewController: UIViewController {
     
     private lazy var bookmarkButton = UIButton().then {
         $0.setImage(UIImage(systemName: "bookmark"), for: .normal)
+        $0.addTarget(self, action: #selector(didTapBookmarkButton), for: .touchUpInside)
     }
     
     private lazy var copyButton = UIButton().then {
         $0.setImage(UIImage(systemName: "doc.on.doc"), for: .normal)
+        $0.addTarget(self, action: #selector(didTapCopyButton), for: .touchUpInside)
     }
     
     private lazy var sourceLabelBaseButton = UIView().then {
@@ -99,6 +96,8 @@ extension TranslateViewController: SourceTextViewControllerDelegate {
         
         sourceLabel.text = sourceText
         sourceLabel.textColor = .label
+        
+        bookmarkButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
     }
 }
 
@@ -187,5 +186,28 @@ private extension TranslateViewController {
         alertController.addAction(cancelAction)
         
         present(alertController, animated: true)
+    }
+    
+    @objc func didTapBookmarkButton() {
+        guard
+            let sourceText = sourceLabel.text,
+            let translatedText = resultLbl.text,
+            bookmarkButton.imageView?.image == UIImage(systemName: "bookmark")
+        else { return }
+        
+        bookmarkButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+        
+        let currentBookmarks: [Bookmark] = UserDefaults.standard.bookmarks
+        let newBookmark = Bookmark(
+            sourceLanguage: sourceLanguage,
+            translatedLanguage: targetLanguage,
+            sourceText: sourceText,
+            translatedText: translatedText
+        )
+        UserDefaults.standard.bookmarks = [newBookmark] + currentBookmarks
+    }
+    
+    @objc func didTapCopyButton() {
+        UIPasteboard.general.string = resultLbl.text
     }
 }
