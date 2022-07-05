@@ -46,7 +46,6 @@ final class TranslateViewController: UIViewController {
     private lazy var resultLbl = UILabel().then {
         $0.font = .systemFont(ofSize: 23, weight: .bold)
         $0.textColor = .mainTintColor
-        $0.text = "Hello"
         $0.numberOfLines = 0
     }
     
