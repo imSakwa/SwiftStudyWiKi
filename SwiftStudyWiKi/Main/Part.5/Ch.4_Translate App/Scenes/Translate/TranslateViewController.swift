@@ -10,11 +10,10 @@ import SnapKit
 import Then
 
 final class TranslateViewController: UIViewController {
-    private var sourceLanguage: Language = .ko
-    private var targetLanguage: Language = .en
-    
+    private var translateManager = TranslatorManager()
+        
     private lazy var sourceLanguageBtn = UIButton().then {
-        $0.setTitle(sourceLanguage.title, for: .normal)
+        $0.setTitle(translateManager.sourceLanguage.title, for: .normal)
         $0.titleLabel?.font = .systemFont(ofSize: 15, weight: .semibold)
         $0.setTitleColor(.label, for: .normal)
         $0.backgroundColor = .white
@@ -23,7 +22,7 @@ final class TranslateViewController: UIViewController {
     }
     
     private lazy var targetLanguageBtn = UIButton().then {
-        $0.setTitle(targetLanguage.title, for: .normal)
+        $0.setTitle(translateManager.targetLanguage.title, for: .normal)
         $0.titleLabel?.font = .systemFont(ofSize: 15, weight: .semibold)
         $0.setTitleColor(.label, for: .normal)
         $0.backgroundColor = .white
@@ -98,6 +97,10 @@ extension TranslateViewController: SourceTextViewControllerDelegate {
         sourceLabel.textColor = .label
         
         bookmarkButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
+        
+        translateManager.translate(from: sourceText) { [weak self] translatedText in
+            self?.resultLbl.text = translatedText
+        }
     }
 }
 
@@ -170,10 +173,10 @@ private extension TranslateViewController {
             let action = UIAlertAction(title: language.title, style: .default) { [weak self] _ in
                 switch type {
                 case .source:
-                    self?.sourceLanguage = language
+                    self?.translateManager.sourceLanguage = language
                     self?.sourceLanguageBtn.setTitle(language.title, for: .normal)
                 case .target:
-                    self?.targetLanguage = language
+                    self?.translateManager.targetLanguage = language
                     self?.targetLanguageBtn.setTitle(language.title, for: .normal)
                 }
                 
@@ -199,8 +202,8 @@ private extension TranslateViewController {
         
         let currentBookmarks: [Bookmark] = UserDefaults.standard.bookmarks
         let newBookmark = Bookmark(
-            sourceLanguage: sourceLanguage,
-            translatedLanguage: targetLanguage,
+            sourceLanguage: translateManager.sourceLanguage,
+            translatedLanguage: translateManager.targetLanguage,
             sourceText: sourceText,
             translatedText: translatedText
         )
