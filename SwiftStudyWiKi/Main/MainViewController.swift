@@ -26,6 +26,9 @@ class MainViewController: UIViewController {
             "0. Alamofire 연습",
             "1. Spotify",
             "2. Drink",
+        ],
+        [
+            "1. Translate App"
         ]
     ]
     
@@ -171,6 +174,16 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
                 
             case 2:
                 self.navigationController?.pushViewController(DrinkAlarmListViewController(style: .grouped), animated: true)
+            
+            default:
+                break
+            }
+        } else if indexPath.section == 2 {
+            switch indexPath.row {
+            case 0:
+                let tabBarVC = TabBarController()
+                tabBarVC.view.tintColor = .mainTintColor
+                self.navigationController?.pushViewController(tabBarVC, animated: true)
             
             default:
                 break
