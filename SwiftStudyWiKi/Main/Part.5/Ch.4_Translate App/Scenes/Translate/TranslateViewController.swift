@@ -67,7 +67,7 @@ final class TranslateViewController: UIViewController {
     }
     
     private lazy var sourceLabel = UILabel().then {
-        $0.text = "텍스트 입력"
+        $0.text = NSLocalizedString("Enter_text", comment: "텍스트 입력")
         $0.textColor = .tertiaryLabel
         $0.numberOfLines = 0
         $0.font = .systemFont(ofSize: 23, weight: .semibold)
@@ -184,7 +184,7 @@ private extension TranslateViewController {
             alertController.addAction(action)
         }
         
-        let cancelAction = UIAlertAction(title: "취소하기", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: "취소"), style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
         
         present(alertController, animated: true)

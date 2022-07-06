@@ -54,6 +54,7 @@
 		76BF128528748BB9001740D8 /* TraslateRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF128428748BB9001740D8 /* TraslateRequestModel.swift */; };
 		76BF128728748BFE001740D8 /* TranslateResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF128628748BFE001740D8 /* TranslateResponseModel.swift */; };
 		76BF128928748CC1001740D8 /* TranslatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF128828748CC1001740D8 /* TranslatorManager.swift */; };
+		76BF128E2875CF10001740D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76BF12902875CF10001740D8 /* Localizable.strings */; };
 		76D675E72822CD9000A6EE21 /* CovidOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675E62822CD9000A6EE21 /* CovidOverView.swift */; };
 		76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */; };
 		76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */; };
@@ -113,6 +114,9 @@
 		76BF128428748BB9001740D8 /* TraslateRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraslateRequestModel.swift; sourceTree = "<group>"; };
 		76BF128628748BFE001740D8 /* TranslateResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateResponseModel.swift; sourceTree = "<group>"; };
 		76BF128828748CC1001740D8 /* TranslatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorManager.swift; sourceTree = "<group>"; };
+		76BF128F2875CF10001740D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		76BF12912875CF49001740D8 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		76BF12922875CF77001740D8 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		76D675E62822CD9000A6EE21 /* CovidOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidOverView.swift; sourceTree = "<group>"; };
 		76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyEnterEmailViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 		764125E727CA6D2A0041EC89 = {
 			isa = PBXGroup;
 			children = (
+				76BF12902875CF10001740D8 /* Localizable.strings */,
 				764125F227CA6D2A0041EC89 /* SwiftStudyWiKi */,
 				764125F127CA6D2A0041EC89 /* Products */,
 				63754EF5D8E8C8DFE1E2087E /* Frameworks */,
@@ -459,6 +464,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 764125E727CA6D2A0041EC89;
 			packageReferences = (
@@ -485,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7641260027CA6D2B0041EC89 /* LaunchScreen.storyboard in Resources */,
+				76BF128E2875CF10001740D8 /* Localizable.strings in Resources */,
 				764125FD27CA6D2B0041EC89 /* Assets.xcassets in Resources */,
 				76D675F22825728D00A6EE21 /* GoogleService-Info.plist in Resources */,
 			);
@@ -555,8 +562,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				764125FF27CA6D2B0041EC89 /* Base */,
+				76BF12912875CF49001740D8 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		76BF12902875CF10001740D8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76BF128F2875CF10001740D8 /* en */,
+				76BF12922875CF77001740D8 /* ko */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -566,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -628,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  SwiftStudyWiKi
+
+  Created by ChangMin on 2022/07/06.
+  
+*/
+
+"Translate" = "번역";
+"Bookmark" = "즐겨찾기";
+
+"Korean" = "한국어";
+"English" = "영어";
+"Japanese" = "일본어";
+"Chinese" = "중국어";
+
+"Cancel" = "취소";
+
+"Enter_text" = "텍스트 입력";
