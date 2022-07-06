@@ -55,6 +55,12 @@
 		76BF128728748BFE001740D8 /* TranslateResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF128628748BFE001740D8 /* TranslateResponseModel.swift */; };
 		76BF128928748CC1001740D8 /* TranslatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF128828748CC1001740D8 /* TranslatorManager.swift */; };
 		76BF128E2875CF10001740D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76BF12902875CF10001740D8 /* Localizable.strings */; };
+		76BF129D2875D8B2001740D8 /* BookReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF129C2875D8B2001740D8 /* BookReviewTests.swift */; };
+		76BF12AA2875D8CE001740D8 /* BookReviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12A92875D8CE001740D8 /* BookReviewUITests.swift */; };
+		76BF12AC2875D8CE001740D8 /* BookReviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12AB2875D8CE001740D8 /* BookReviewUITestsLaunchTests.swift */; };
+		76BF12B42875DAB2001740D8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 76BF12B32875DAB2001740D8 /* Kingfisher */; };
+		76BF12B62875DBB4001740D8 /* ReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12B52875DBB4001740D8 /* ReviewListViewController.swift */; };
+		76BF12B82875DBD1001740D8 /* ReviewListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12B72875DBD1001740D8 /* ReviewListPresenter.swift */; };
 		76D675E72822CD9000A6EE21 /* CovidOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675E62822CD9000A6EE21 /* CovidOverView.swift */; };
 		76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */; };
 		76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */; };
@@ -69,6 +75,23 @@
 		76F62E3C2866BDD000028E5C /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F62E3B2866BDD000028E5C /* TestVC.swift */; };
 		76F62E3E2868BC6C00028E5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F62E3D2868BC6C00028E5C /* ContentView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76BF129E2875D8B2001740D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 764125E827CA6D2A0041EC89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 764125EF27CA6D2A0041EC89;
+			remoteInfo = SwiftStudyWiKi;
+		};
+		76BF12AD2875D8CE001740D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 764125E827CA6D2A0041EC89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 764125EF27CA6D2A0041EC89;
+			remoteInfo = SwiftStudyWiKi;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		760524812815B43900C3C243 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +140,13 @@
 		76BF128F2875CF10001740D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		76BF12912875CF49001740D8 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		76BF12922875CF77001740D8 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		76BF129A2875D8B2001740D8 /* BookReviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BF129C2875D8B2001740D8 /* BookReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewTests.swift; sourceTree = "<group>"; };
+		76BF12A72875D8CE001740D8 /* BookReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BF12A92875D8CE001740D8 /* BookReviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITests.swift; sourceTree = "<group>"; };
+		76BF12AB2875D8CE001740D8 /* BookReviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76BF12B52875DBB4001740D8 /* ReviewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListViewController.swift; sourceTree = "<group>"; };
+		76BF12B72875DBD1001740D8 /* ReviewListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListPresenter.swift; sourceTree = "<group>"; };
 		76D675E62822CD9000A6EE21 /* CovidOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidOverView.swift; sourceTree = "<group>"; };
 		76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyEnterEmailViewController.swift; sourceTree = "<group>"; };
@@ -139,11 +169,26 @@
 				760DE8862822C02900F8683E /* RxCocoa in Frameworks */,
 				7643FBA92822C0F6002D9894 /* Alamofire in Frameworks */,
 				7643FBA62822C0AF002D9894 /* Then in Frameworks */,
+				76BF12B42875DAB2001740D8 /* Kingfisher in Frameworks */,
 				7643FBAC2822C131002D9894 /* Charts in Frameworks */,
 				760DE88F2822C06A00F8683E /* SnapKit in Frameworks */,
 				760DE88A2822C02900F8683E /* RxSwift in Frameworks */,
 				76D675F52825733F00A6EE21 /* FirebaseAuth in Frameworks */,
 				76EE132F2826BCD1000C4E59 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BF12972875D8B2001740D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BF12A42875D8CE001740D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				764125F027CA6D2A0041EC89 /* SwiftStudyWiKi.app */,
+				76BF129A2875D8B2001740D8 /* BookReviewTests.xctest */,
+				76BF12A72875D8CE001740D8 /* BookReviewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				76BF126828740F49001740D8 /* Ch.4_Translate App */,
+				76BF12932875D80B001740D8 /* Ch.5_BookReview App */,
 			);
 			path = Part.5;
 			sourceTree = "<group>";
@@ -335,6 +383,50 @@
 				76BF128828748CC1001740D8 /* TranslatorManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		76BF12932875D80B001740D8 /* Ch.5_BookReview App */ = {
+			isa = PBXGroup;
+			children = (
+				76BF12BA2875DBD9001740D8 /* Scene */,
+				76BF129B2875D8B2001740D8 /* BookReviewTests */,
+				76BF12A82875D8CE001740D8 /* BookReviewUITests */,
+			);
+			path = "Ch.5_BookReview App";
+			sourceTree = "<group>";
+		};
+		76BF129B2875D8B2001740D8 /* BookReviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				76BF129C2875D8B2001740D8 /* BookReviewTests.swift */,
+			);
+			path = BookReviewTests;
+			sourceTree = "<group>";
+		};
+		76BF12A82875D8CE001740D8 /* BookReviewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76BF12A92875D8CE001740D8 /* BookReviewUITests.swift */,
+				76BF12AB2875D8CE001740D8 /* BookReviewUITestsLaunchTests.swift */,
+			);
+			path = BookReviewUITests;
+			sourceTree = "<group>";
+		};
+		76BF12B92875DBD4001740D8 /* ReviewList */ = {
+			isa = PBXGroup;
+			children = (
+				76BF12B52875DBB4001740D8 /* ReviewListViewController.swift */,
+				76BF12B72875DBD1001740D8 /* ReviewListPresenter.swift */,
+			);
+			path = ReviewList;
+			sourceTree = "<group>";
+		};
+		76BF12BA2875DBD9001740D8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				76BF12B92875DBD4001740D8 /* ReviewList */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		76D675E82822D6BA00A6EE21 /* Part.2 */ = {
@@ -437,10 +529,47 @@
 				7643FBAB2822C131002D9894 /* Charts */,
 				76D675F42825733F00A6EE21 /* FirebaseAuth */,
 				76EE132E2826BCD1000C4E59 /* GoogleSignIn */,
+				76BF12B32875DAB2001740D8 /* Kingfisher */,
 			);
 			productName = SwiftStudyWiKi;
 			productReference = 764125F027CA6D2A0041EC89 /* SwiftStudyWiKi.app */;
 			productType = "com.apple.product-type.application";
+		};
+		76BF12992875D8B2001740D8 /* BookReviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BF12A02875D8B2001740D8 /* Build configuration list for PBXNativeTarget "BookReviewTests" */;
+			buildPhases = (
+				76BF12962875D8B2001740D8 /* Sources */,
+				76BF12972875D8B2001740D8 /* Frameworks */,
+				76BF12982875D8B2001740D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76BF129F2875D8B2001740D8 /* PBXTargetDependency */,
+			);
+			name = BookReviewTests;
+			productName = BookReviewTests;
+			productReference = 76BF129A2875D8B2001740D8 /* BookReviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76BF12A62875D8CE001740D8 /* BookReviewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BF12AF2875D8CE001740D8 /* Build configuration list for PBXNativeTarget "BookReviewUITests" */;
+			buildPhases = (
+				76BF12A32875D8CE001740D8 /* Sources */,
+				76BF12A42875D8CE001740D8 /* Frameworks */,
+				76BF12A52875D8CE001740D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76BF12AE2875D8CE001740D8 /* PBXTargetDependency */,
+			);
+			name = BookReviewUITests;
+			productName = BookReviewUITests;
+			productReference = 76BF12A72875D8CE001740D8 /* BookReviewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -449,11 +578,19 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					764125EF27CA6D2A0041EC89 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					76BF12992875D8B2001740D8 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 764125EF27CA6D2A0041EC89;
+					};
+					76BF12A62875D8CE001740D8 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 764125EF27CA6D2A0041EC89;
 					};
 				};
 			};
@@ -475,12 +612,15 @@
 				7643FBAA2822C131002D9894 /* XCRemoteSwiftPackageReference "Charts" */,
 				76D675F32825733F00A6EE21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				76EE132D2826BCD1000C4E59 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 764125F127CA6D2A0041EC89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				764125EF27CA6D2A0041EC89 /* SwiftStudyWiKi */,
+				76BF12992875D8B2001740D8 /* BookReviewTests */,
+				76BF12A62875D8CE001740D8 /* BookReviewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -494,6 +634,20 @@
 				76BF128E2875CF10001740D8 /* Localizable.strings in Resources */,
 				764125FD27CA6D2B0041EC89 /* Assets.xcassets in Resources */,
 				76D675F22825728D00A6EE21 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BF12982875D8B2001740D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BF12A52875D8CE001740D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +673,7 @@
 				760524862815B7DD00C3C243 /* DiaryFavoItemViewController.swift in Sources */,
 				76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */,
 				76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */,
+				76BF12B62875DBB4001740D8 /* ReviewListViewController.swift in Sources */,
 				7631813728280E6F00BA27BE /* DrinkAddAlarmViewController.swift in Sources */,
 				76BF127728743233001740D8 /* Bookmark.swift in Sources */,
 				76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */,
@@ -528,6 +683,7 @@
 				76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */,
 				76BF127E28743AB7001740D8 /* BookmarkCollectionViewCell.swift in Sources */,
 				76BF128928748CC1001740D8 /* TranslatorManager.swift in Sources */,
+				76BF12B82875DBD1001740D8 /* ReviewListPresenter.swift in Sources */,
 				76BF126A28741543001740D8 /* TabBarController.swift in Sources */,
 				764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */,
 				76BF127428742ECF001740D8 /* Language.swift in Sources */,
@@ -555,7 +711,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76BF12962875D8B2001740D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BF129D2875D8B2001740D8 /* BookReviewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BF12A32875D8CE001740D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BF12AA2875D8CE001740D8 /* BookReviewUITests.swift in Sources */,
+				76BF12AC2875D8CE001740D8 /* BookReviewUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76BF129F2875D8B2001740D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 764125EF27CA6D2A0041EC89 /* SwiftStudyWiKi */;
+			targetProxy = 76BF129E2875D8B2001740D8 /* PBXContainerItemProxy */;
+		};
+		76BF12AE2875D8CE001740D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 764125EF27CA6D2A0041EC89 /* SwiftStudyWiKi */;
+			targetProxy = 76BF12AD2875D8CE001740D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		764125FE27CA6D2B0041EC89 /* LaunchScreen.storyboard */ = {
@@ -757,6 +943,80 @@
 			};
 			name = Release;
 		};
+		76BF12A12875D8B2001740D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9MW78T4QB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chagmn.BookReviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftStudyWiKi.app/SwiftStudyWiKi";
+			};
+			name = Debug;
+		};
+		76BF12A22875D8B2001740D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9MW78T4QB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chagmn.BookReviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftStudyWiKi.app/SwiftStudyWiKi";
+			};
+			name = Release;
+		};
+		76BF12B02875D8CE001740D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9MW78T4QB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chagmn.BookReviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftStudyWiKi;
+			};
+			name = Debug;
+		};
+		76BF12B12875D8CE001740D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9MW78T4QB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chagmn.BookReviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftStudyWiKi;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -774,6 +1034,24 @@
 			buildConfigurations = (
 				7641260527CA6D2B0041EC89 /* Debug */,
 				7641260627CA6D2B0041EC89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BF12A02875D8B2001740D8 /* Build configuration list for PBXNativeTarget "BookReviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BF12A12875D8B2001740D8 /* Debug */,
+				76BF12A22875D8B2001740D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BF12AF2875D8CE001740D8 /* Build configuration list for PBXNativeTarget "BookReviewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BF12B02875D8CE001740D8 /* Debug */,
+				76BF12B12875D8CE001740D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -819,6 +1097,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.0.0;
+			};
+		};
+		76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
 			};
 		};
 		76D675F32825733F00A6EE21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
@@ -874,6 +1160,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7643FBAA2822C131002D9894 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		76BF12B32875DAB2001740D8 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		76D675F42825733F00A6EE21 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;

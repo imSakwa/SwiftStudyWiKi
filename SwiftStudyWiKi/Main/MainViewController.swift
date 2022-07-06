@@ -28,7 +28,8 @@ class MainViewController: UIViewController {
             "2. Drink",
         ],
         [
-            "1. Translate App"
+            "1. Translate App",
+            "2. BookReview App"
         ]
     ]
     
@@ -184,6 +185,16 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
                 let tabBarVC = TabBarController()
                 tabBarVC.view.tintColor = .mainTintColor
                 self.navigationController?.pushViewController(tabBarVC, animated: true)
+                
+            case 1:
+                let naviVC = UINavigationController()
+                let reviewVC = ReviewListViewController()
+                
+                naviVC.viewControllers = [reviewVC]
+                naviVC.navigationBar.prefersLargeTitles = true
+                naviVC.modalPresentationStyle = .fullScreen
+                
+                self.present(naviVC, animated: true)
             
             default:
                 break
