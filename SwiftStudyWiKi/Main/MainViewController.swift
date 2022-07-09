@@ -187,11 +187,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
                 self.navigationController?.pushViewController(tabBarVC, animated: true)
                 
             case 1:
-                let naviVC = UINavigationController()
                 let reviewVC = ReviewListViewController()
                 
-                naviVC.viewControllers = [reviewVC]
-                naviVC.navigationBar.prefersLargeTitles = true
+                let naviVC = UINavigationController(rootViewController: reviewVC)
                 naviVC.modalPresentationStyle = .fullScreen
                 
                 self.present(naviVC, animated: true)

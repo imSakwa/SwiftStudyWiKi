@@ -61,6 +61,8 @@
 		76BF12B42875DAB2001740D8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 76BF12B32875DAB2001740D8 /* Kingfisher */; };
 		76BF12B62875DBB4001740D8 /* ReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12B52875DBB4001740D8 /* ReviewListViewController.swift */; };
 		76BF12B82875DBD1001740D8 /* ReviewListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12B72875DBD1001740D8 /* ReviewListPresenter.swift */; };
+		76BF12BD2879B3A1001740D8 /* ReviewWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12BC2879B3A1001740D8 /* ReviewWriteViewController.swift */; };
+		76BF12BF2879B3AD001740D8 /* ReviewWritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12BE2879B3AD001740D8 /* ReviewWritePresenter.swift */; };
 		76D675E72822CD9000A6EE21 /* CovidOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675E62822CD9000A6EE21 /* CovidOverView.swift */; };
 		76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */; };
 		76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */; };
@@ -147,6 +149,8 @@
 		76BF12AB2875D8CE001740D8 /* BookReviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		76BF12B52875DBB4001740D8 /* ReviewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListViewController.swift; sourceTree = "<group>"; };
 		76BF12B72875DBD1001740D8 /* ReviewListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListPresenter.swift; sourceTree = "<group>"; };
+		76BF12BC2879B3A1001740D8 /* ReviewWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWriteViewController.swift; sourceTree = "<group>"; };
+		76BF12BE2879B3AD001740D8 /* ReviewWritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWritePresenter.swift; sourceTree = "<group>"; };
 		76D675E62822CD9000A6EE21 /* CovidOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidOverView.swift; sourceTree = "<group>"; };
 		76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyEnterEmailViewController.swift; sourceTree = "<group>"; };
@@ -425,8 +429,18 @@
 			isa = PBXGroup;
 			children = (
 				76BF12B92875DBD4001740D8 /* ReviewList */,
+				76BF12C02879B3B2001740D8 /* ReviewWrite */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		76BF12C02879B3B2001740D8 /* ReviewWrite */ = {
+			isa = PBXGroup;
+			children = (
+				76BF12BC2879B3A1001740D8 /* ReviewWriteViewController.swift */,
+				76BF12BE2879B3AD001740D8 /* ReviewWritePresenter.swift */,
+			);
+			path = ReviewWrite;
 			sourceTree = "<group>";
 		};
 		76D675E82822D6BA00A6EE21 /* Part.2 */ = {
@@ -672,6 +686,7 @@
 				763AF26F27CA6F81004040E2 /* MyNavigationController.swift in Sources */,
 				760524862815B7DD00C3C243 /* DiaryFavoItemViewController.swift in Sources */,
 				76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */,
+				76BF12BD2879B3A1001740D8 /* ReviewWriteViewController.swift in Sources */,
 				76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */,
 				76BF12B62875DBB4001740D8 /* ReviewListViewController.swift in Sources */,
 				7631813728280E6F00BA27BE /* DrinkAddAlarmViewController.swift in Sources */,
@@ -699,6 +714,7 @@
 				76BF128228743E7E001740D8 /* Type.swift in Sources */,
 				76D675E72822CD9000A6EE21 /* CovidOverView.swift in Sources */,
 				7631813328280B2600BA27BE /* DrinkAlarmTableViewCell.swift in Sources */,
+				76BF12BF2879B3AD001740D8 /* ReviewWritePresenter.swift in Sources */,
 				76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */,
 				76BF128728748BFE001740D8 /* TranslateResponseModel.swift in Sources */,
 				76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */,
