@@ -63,6 +63,12 @@
 		76BF12B82875DBD1001740D8 /* ReviewListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12B72875DBD1001740D8 /* ReviewListPresenter.swift */; };
 		76BF12BD2879B3A1001740D8 /* ReviewWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12BC2879B3A1001740D8 /* ReviewWriteViewController.swift */; };
 		76BF12BF2879B3AD001740D8 /* ReviewWritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12BE2879B3AD001740D8 /* ReviewWritePresenter.swift */; };
+		76BF12C2287AABB0001740D8 /* SearchBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12C1287AABB0001740D8 /* SearchBookViewController.swift */; };
+		76BF12C4287AABCB001740D8 /* SearchBookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12C3287AABCB001740D8 /* SearchBookPresenter.swift */; };
+		76BF12C7287AB319001740D8 /* BookSearchRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12C6287AB319001740D8 /* BookSearchRequestModel.swift */; };
+		76BF12CA287AB393001740D8 /* BookSearchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12C9287AB393001740D8 /* BookSearchResponseModel.swift */; };
+		76BF12CC287AB471001740D8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12CB287AB471001740D8 /* Book.swift */; };
+		76BF12CE287AB4B2001740D8 /* BookSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12CD287AB4B2001740D8 /* BookSearchManager.swift */; };
 		76D675E72822CD9000A6EE21 /* CovidOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675E62822CD9000A6EE21 /* CovidOverView.swift */; };
 		76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */; };
 		76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */; };
@@ -151,6 +157,12 @@
 		76BF12B72875DBD1001740D8 /* ReviewListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListPresenter.swift; sourceTree = "<group>"; };
 		76BF12BC2879B3A1001740D8 /* ReviewWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWriteViewController.swift; sourceTree = "<group>"; };
 		76BF12BE2879B3AD001740D8 /* ReviewWritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWritePresenter.swift; sourceTree = "<group>"; };
+		76BF12C1287AABB0001740D8 /* SearchBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookViewController.swift; sourceTree = "<group>"; };
+		76BF12C3287AABCB001740D8 /* SearchBookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookPresenter.swift; sourceTree = "<group>"; };
+		76BF12C6287AB319001740D8 /* BookSearchRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchRequestModel.swift; sourceTree = "<group>"; };
+		76BF12C9287AB393001740D8 /* BookSearchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResponseModel.swift; sourceTree = "<group>"; };
+		76BF12CB287AB471001740D8 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		76BF12CD287AB4B2001740D8 /* BookSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchManager.swift; sourceTree = "<group>"; };
 		76D675E62822CD9000A6EE21 /* CovidOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidOverView.swift; sourceTree = "<group>"; };
 		76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyEnterEmailViewController.swift; sourceTree = "<group>"; };
@@ -392,6 +404,8 @@
 		76BF12932875D80B001740D8 /* Ch.5_BookReview App */ = {
 			isa = PBXGroup;
 			children = (
+				76BF12CF287AB4B8001740D8 /* Manager */,
+				76BF12C8287AB321001740D8 /* Models */,
 				76BF12BA2875DBD9001740D8 /* Scene */,
 				76BF129B2875D8B2001740D8 /* BookReviewTests */,
 				76BF12A82875D8CE001740D8 /* BookReviewUITests */,
@@ -430,6 +444,7 @@
 			children = (
 				76BF12B92875DBD4001740D8 /* ReviewList */,
 				76BF12C02879B3B2001740D8 /* ReviewWrite */,
+				76BF12C5287AABD0001740D8 /* SearchBook */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -441,6 +456,33 @@
 				76BF12BE2879B3AD001740D8 /* ReviewWritePresenter.swift */,
 			);
 			path = ReviewWrite;
+			sourceTree = "<group>";
+		};
+		76BF12C5287AABD0001740D8 /* SearchBook */ = {
+			isa = PBXGroup;
+			children = (
+				76BF12C1287AABB0001740D8 /* SearchBookViewController.swift */,
+				76BF12C3287AABCB001740D8 /* SearchBookPresenter.swift */,
+			);
+			path = SearchBook;
+			sourceTree = "<group>";
+		};
+		76BF12C8287AB321001740D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76BF12CB287AB471001740D8 /* Book.swift */,
+				76BF12C6287AB319001740D8 /* BookSearchRequestModel.swift */,
+				76BF12C9287AB393001740D8 /* BookSearchResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		76BF12CF287AB4B8001740D8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				76BF12CD287AB4B2001740D8 /* BookSearchManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		76D675E82822D6BA00A6EE21 /* Part.2 */ = {
@@ -678,16 +720,21 @@
 				76A58783282160B300D8D3DB /* WeatherViewController.swift in Sources */,
 				760524822815B43900C3C243 /* DiaryViewController.swift in Sources */,
 				760DE8772821870300F8683E /* CovidDetailTableCell.swift in Sources */,
+				76BF12C2287AABB0001740D8 /* SearchBookViewController.swift in Sources */,
 				76BF126D2874164E001740D8 /* TranslateViewController.swift in Sources */,
 				76D675F028255E4E00A6EE21 /* SpotifyMainViewController.swift in Sources */,
 				76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */,
 				76A4D04B2857858F00DCC34C /* AlamofireViewController.swift in Sources */,
+				76BF12CC287AB471001740D8 /* Book.swift in Sources */,
 				763AF27127CBABF3004040E2 /* SubjectTableCell.swift in Sources */,
 				763AF26F27CA6F81004040E2 /* MyNavigationController.swift in Sources */,
 				760524862815B7DD00C3C243 /* DiaryFavoItemViewController.swift in Sources */,
 				76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */,
 				76BF12BD2879B3A1001740D8 /* ReviewWriteViewController.swift in Sources */,
 				76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */,
+				76BF12CE287AB4B2001740D8 /* BookSearchManager.swift in Sources */,
+				76BF12CA287AB393001740D8 /* BookSearchResponseModel.swift in Sources */,
+				76BF12C4287AABCB001740D8 /* SearchBookPresenter.swift in Sources */,
 				76BF12B62875DBB4001740D8 /* ReviewListViewController.swift in Sources */,
 				7631813728280E6F00BA27BE /* DrinkAddAlarmViewController.swift in Sources */,
 				76BF127728743233001740D8 /* Bookmark.swift in Sources */,
@@ -697,6 +744,7 @@
 				76BF12792874349F001740D8 /* UserDefaults+.swift in Sources */,
 				76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */,
 				76BF127E28743AB7001740D8 /* BookmarkCollectionViewCell.swift in Sources */,
+				76BF12C7287AB319001740D8 /* BookSearchRequestModel.swift in Sources */,
 				76BF128928748CC1001740D8 /* TranslatorManager.swift in Sources */,
 				76BF12B82875DBD1001740D8 /* ReviewListPresenter.swift in Sources */,
 				76BF126A28741543001740D8 /* TabBarController.swift in Sources */,
