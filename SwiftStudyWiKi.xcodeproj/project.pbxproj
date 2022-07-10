@@ -69,6 +69,8 @@
 		76BF12CA287AB393001740D8 /* BookSearchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12C9287AB393001740D8 /* BookSearchResponseModel.swift */; };
 		76BF12CC287AB471001740D8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12CB287AB471001740D8 /* Book.swift */; };
 		76BF12CE287AB4B2001740D8 /* BookSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12CD287AB4B2001740D8 /* BookSearchManager.swift */; };
+		76BF12D1287ABCF2001740D8 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12D0287ABCF2001740D8 /* UserDefaultsManager.swift */; };
+		76BF12D3287ABD03001740D8 /* BookReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF12D2287ABD03001740D8 /* BookReview.swift */; };
 		76D675E72822CD9000A6EE21 /* CovidOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675E62822CD9000A6EE21 /* CovidOverView.swift */; };
 		76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */; };
 		76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */; };
@@ -163,6 +165,8 @@
 		76BF12C9287AB393001740D8 /* BookSearchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResponseModel.swift; sourceTree = "<group>"; };
 		76BF12CB287AB471001740D8 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		76BF12CD287AB4B2001740D8 /* BookSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchManager.swift; sourceTree = "<group>"; };
+		76BF12D0287ABCF2001740D8 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		76BF12D2287ABD03001740D8 /* BookReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReview.swift; sourceTree = "<group>"; };
 		76D675E62822CD9000A6EE21 /* CovidOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidOverView.swift; sourceTree = "<group>"; };
 		76D675EB28255E2E00A6EE21 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyEnterEmailViewController.swift; sourceTree = "<group>"; };
@@ -473,6 +477,7 @@
 				76BF12CB287AB471001740D8 /* Book.swift */,
 				76BF12C6287AB319001740D8 /* BookSearchRequestModel.swift */,
 				76BF12C9287AB393001740D8 /* BookSearchResponseModel.swift */,
+				76BF12D2287ABD03001740D8 /* BookReview.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -481,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				76BF12CD287AB4B2001740D8 /* BookSearchManager.swift */,
+				76BF12D0287ABCF2001740D8 /* UserDefaultsManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -734,6 +740,7 @@
 				76D675EC28255E2E00A6EE21 /* SpotifyLoginViewController.swift in Sources */,
 				76BF12CE287AB4B2001740D8 /* BookSearchManager.swift in Sources */,
 				76BF12CA287AB393001740D8 /* BookSearchResponseModel.swift in Sources */,
+				76BF12D3287ABD03001740D8 /* BookReview.swift in Sources */,
 				76BF12C4287AABCB001740D8 /* SearchBookPresenter.swift in Sources */,
 				76BF12B62875DBB4001740D8 /* ReviewListViewController.swift in Sources */,
 				7631813728280E6F00BA27BE /* DrinkAddAlarmViewController.swift in Sources */,
@@ -750,6 +757,7 @@
 				76BF126A28741543001740D8 /* TabBarController.swift in Sources */,
 				764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */,
 				76BF127428742ECF001740D8 /* Language.swift in Sources */,
+				76BF12D1287ABCF2001740D8 /* UserDefaultsManager.swift in Sources */,
 				760C973A27F9B4370051F8BF /* Model.swift in Sources */,
 				7631813528280CA300BA27BE /* Alert.swift in Sources */,
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,

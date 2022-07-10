@@ -61,7 +61,7 @@ extension ReviewWriteViewController: ReviewWriteProtocol {
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .save,
             target: self,
-            action: nil
+            action: #selector(didTapRightBarButton)
         )
     }
     
@@ -130,7 +130,7 @@ private extension ReviewWriteViewController {
     }
     
     @objc func didTapRightBarButton() {
-        presenter.didTapRightBarButton()
+        presenter.didTapRightBarButton(contentsText: contentsTextView.text)
     }
     
     @objc func didTapBookTitleButton() {
