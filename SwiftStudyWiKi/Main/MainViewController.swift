@@ -29,7 +29,8 @@ class MainViewController: UIViewController {
         ],
         [
             "1. Translate App",
-            "2. BookReview App"
+            "2. BookReview App",
+            "3. MovieReview App"
         ]
     ]
     
@@ -190,6 +191,14 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
                 let reviewVC = ReviewListViewController()
                 
                 let naviVC = UINavigationController(rootViewController: reviewVC)
+                naviVC.modalPresentationStyle = .fullScreen
+                
+                self.present(naviVC, animated: true)
+                
+            case 2:
+                let movieReviewVC = MovieReviewViewController()
+                
+                let naviVC = UINavigationController(rootViewController: movieReviewVC)
                 naviVC.modalPresentationStyle = .fullScreen
                 
                 self.present(naviVC, animated: true)
