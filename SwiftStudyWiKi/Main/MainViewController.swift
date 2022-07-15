@@ -196,7 +196,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
                 self.present(naviVC, animated: true)
                 
             case 2:
-                let movieReviewVC = MovieReviewViewController()
+                let movieReviewVC = MovieListViewController()
                 
                 let naviVC = UINavigationController(rootViewController: movieReviewVC)
                 naviVC.modalPresentationStyle = .fullScreen

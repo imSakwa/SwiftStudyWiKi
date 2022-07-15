@@ -23,7 +23,8 @@
 		76211E692881B3280031AA2F /* MovieSearchResponseMoel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E682881B3280031AA2F /* MovieSearchResponseMoel.swift */; };
 		76211E6C2881B4060031AA2F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E6B2881B4060031AA2F /* Movie.swift */; };
 		76211E6E2881B4240031AA2F /* MovieSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E6D2881B4240031AA2F /* MovieSearchManager.swift */; };
-		76211E712881B5E80031AA2F /* MovieReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E702881B5E80031AA2F /* MovieReviewViewController.swift */; };
+		76211E712881B5E80031AA2F /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E702881B5E80031AA2F /* MovieListViewController.swift */; };
+		76211E732881B6DF0031AA2F /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E722881B6DF0031AA2F /* MovieListPresenter.swift */; };
 		763181312828039700BA27BE /* DrinkAlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763181302828039700BA27BE /* DrinkAlarmListViewController.swift */; };
 		7631813328280B2600BA27BE /* DrinkAlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631813228280B2600BA27BE /* DrinkAlarmTableViewCell.swift */; };
 		7631813528280CA300BA27BE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631813428280CA300BA27BE /* Alert.swift */; };
@@ -115,7 +116,8 @@
 		76211E682881B3280031AA2F /* MovieSearchResponseMoel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchResponseMoel.swift; sourceTree = "<group>"; };
 		76211E6B2881B4060031AA2F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		76211E6D2881B4240031AA2F /* MovieSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchManager.swift; sourceTree = "<group>"; };
-		76211E702881B5E80031AA2F /* MovieReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewViewController.swift; sourceTree = "<group>"; };
+		76211E702881B5E80031AA2F /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		76211E722881B6DF0031AA2F /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
 		7631812E2827FAC200BA27BE /* SwiftStudyWiKi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftStudyWiKi.entitlements; sourceTree = "<group>"; };
 		763181302828039700BA27BE /* DrinkAlarmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAlarmListViewController.swift; sourceTree = "<group>"; };
 		7631813228280B2600BA27BE /* DrinkAlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAlarmTableViewCell.swift; sourceTree = "<group>"; };
@@ -242,7 +244,8 @@
 		76211E652881B2EC0031AA2F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				76211E702881B5E80031AA2F /* MovieReviewViewController.swift */,
+				76211E702881B5E80031AA2F /* MovieListViewController.swift */,
+				76211E722881B6DF0031AA2F /* MovieListPresenter.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -744,7 +747,7 @@
 				764125F827CA6D2A0041EC89 /* MainViewController.swift in Sources */,
 				760DE87528217EA100F8683E /* CovidDetailViewController.swift in Sources */,
 				76A58783282160B300D8D3DB /* WeatherViewController.swift in Sources */,
-				76211E712881B5E80031AA2F /* MovieReviewViewController.swift in Sources */,
+				76211E712881B5E80031AA2F /* MovieListViewController.swift in Sources */,
 				76211E6E2881B4240031AA2F /* MovieSearchManager.swift in Sources */,
 				760524822815B43900C3C243 /* DiaryViewController.swift in Sources */,
 				760DE8772821870300F8683E /* CovidDetailTableCell.swift in Sources */,
@@ -774,6 +777,7 @@
 				76A5878A2821767500D8D3DB /* CovidViewController.swift in Sources */,
 				76BF12792874349F001740D8 /* UserDefaults+.swift in Sources */,
 				76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */,
+				76211E732881B6DF0031AA2F /* MovieListPresenter.swift in Sources */,
 				76BF127E28743AB7001740D8 /* BookmarkCollectionViewCell.swift in Sources */,
 				76BF12C7287AB319001740D8 /* BookSearchRequestModel.swift in Sources */,
 				76BF128928748CC1001740D8 /* TranslatorManager.swift in Sources */,
