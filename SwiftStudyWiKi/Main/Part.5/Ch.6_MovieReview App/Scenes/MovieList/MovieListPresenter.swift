@@ -47,6 +47,7 @@ extension MovieListPresenter: UISearchBarDelegate {
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        currentMovieSearchResult = []
         viewController?.updateSearchTableView(isHidden: true)
     }
     
@@ -54,6 +55,7 @@ extension MovieListPresenter: UISearchBarDelegate {
         movieSearchManager.request(from: searchText) { [weak self] movies in
             
             self?.currentMovieSearchResult = movies
+            self?.viewController?.updateSearchTableView(isHidden: false)
         }
     }
 }

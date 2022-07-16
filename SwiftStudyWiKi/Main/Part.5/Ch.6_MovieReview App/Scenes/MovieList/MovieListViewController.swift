@@ -14,7 +14,7 @@ final class MovieListViewController: UIViewController {
     
     private let searchController = UISearchController()
     
-    private lazy var collectionView = UICollectionView().then {
+    private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout()).then {
         let collectionViewLayout = UICollectionViewFlowLayout()
         $0.collectionViewLayout = collectionViewLayout
         $0.backgroundColor = .systemBackground
@@ -68,5 +68,6 @@ extension MovieListViewController: MovieListProtocol {
     
     func updateSearchTableView(isHidden: Bool) {
         searchResultTableView.isHidden = isHidden
+        searchResultTableView.reloadData()
     }
 }
