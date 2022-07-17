@@ -26,6 +26,10 @@
 		76211E712881B5E80031AA2F /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E702881B5E80031AA2F /* MovieListViewController.swift */; };
 		76211E732881B6DF0031AA2F /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E722881B6DF0031AA2F /* MovieListPresenter.swift */; };
 		76211E752882DF080031AA2F /* MovieListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E742882DF080031AA2F /* MovieListCollectionViewCell.swift */; };
+		76211E792883054C0031AA2F /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E782883054C0031AA2F /* MovieDetailViewController.swift */; };
+		76211E7B288305550031AA2F /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E7A288305550031AA2F /* MovieDetailPresenter.swift */; };
+		76211E7D2883D9940031AA2F /* MovieContentStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E7C2883D9940031AA2F /* MovieContentStackView.swift */; };
+		76211E7F2883DC7F0031AA2F /* MovieUserDefaultsManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E7E2883DC7F0031AA2F /* MovieUserDefaultsManagerProtocol.swift */; };
 		763181312828039700BA27BE /* DrinkAlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763181302828039700BA27BE /* DrinkAlarmListViewController.swift */; };
 		7631813328280B2600BA27BE /* DrinkAlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631813228280B2600BA27BE /* DrinkAlarmTableViewCell.swift */; };
 		7631813528280CA300BA27BE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631813428280CA300BA27BE /* Alert.swift */; };
@@ -120,6 +124,10 @@
 		76211E702881B5E80031AA2F /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		76211E722881B6DF0031AA2F /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
 		76211E742882DF080031AA2F /* MovieListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionViewCell.swift; sourceTree = "<group>"; };
+		76211E782883054C0031AA2F /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		76211E7A288305550031AA2F /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		76211E7C2883D9940031AA2F /* MovieContentStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieContentStackView.swift; sourceTree = "<group>"; };
+		76211E7E2883DC7F0031AA2F /* MovieUserDefaultsManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUserDefaultsManagerProtocol.swift; sourceTree = "<group>"; };
 		7631812E2827FAC200BA27BE /* SwiftStudyWiKi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftStudyWiKi.entitlements; sourceTree = "<group>"; };
 		763181302828039700BA27BE /* DrinkAlarmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAlarmListViewController.swift; sourceTree = "<group>"; };
 		7631813228280B2600BA27BE /* DrinkAlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAlarmTableViewCell.swift; sourceTree = "<group>"; };
@@ -246,6 +254,7 @@
 		76211E652881B2EC0031AA2F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				76211E772883053D0031AA2F /* MovieDetail */,
 				76211E762882DF200031AA2F /* MovieList */,
 			);
 			path = Scenes;
@@ -265,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				76211E6D2881B4240031AA2F /* MovieSearchManager.swift */,
+				76211E7E2883DC7F0031AA2F /* MovieUserDefaultsManagerProtocol.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -277,6 +287,16 @@
 				76211E722881B6DF0031AA2F /* MovieListPresenter.swift */,
 			);
 			path = MovieList;
+			sourceTree = "<group>";
+		};
+		76211E772883053D0031AA2F /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				76211E782883054C0031AA2F /* MovieDetailViewController.swift */,
+				76211E7A288305550031AA2F /* MovieDetailPresenter.swift */,
+				76211E7C2883D9940031AA2F /* MovieContentStackView.swift */,
+			);
+			path = MovieDetail;
 			sourceTree = "<group>";
 		};
 		7631812F2828035100BA27BE /* Ch.4_Drink */ = {
@@ -782,6 +802,7 @@
 				76BF12C4287AABCB001740D8 /* SearchBookPresenter.swift in Sources */,
 				76BF12B62875DBB4001740D8 /* ReviewListViewController.swift in Sources */,
 				7631813728280E6F00BA27BE /* DrinkAddAlarmViewController.swift in Sources */,
+				76211E7B288305550031AA2F /* MovieDetailPresenter.swift in Sources */,
 				76BF127728743233001740D8 /* Bookmark.swift in Sources */,
 				76211E692881B3280031AA2F /* MovieSearchResponseMoel.swift in Sources */,
 				76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */,
@@ -802,6 +823,7 @@
 				7631813528280CA300BA27BE /* Alert.swift in Sources */,
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,
 				76BF1271287423C2001740D8 /* SourceTextViewController.swift in Sources */,
+				76211E792883054C0031AA2F /* MovieDetailViewController.swift in Sources */,
 				760C973627F9A4A50051F8BF /* ViewModel.swift in Sources */,
 				76DF614A27FB46D900E4F436 /* Quotes.swift in Sources */,
 				76BF128028743D19001740D8 /* BookmarkTextStackView.swift in Sources */,
@@ -813,10 +835,12 @@
 				76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */,
 				76BF128728748BFE001740D8 /* TranslateResponseModel.swift in Sources */,
 				76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */,
+				76211E7D2883D9940031AA2F /* MovieContentStackView.swift in Sources */,
 				76211E6C2881B4060031AA2F /* Movie.swift in Sources */,
 				76BF126F28741B93001740D8 /* UIColor+.swift in Sources */,
 				760C973827F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift in Sources */,
 				76A587872821743C00D8D3DB /* ErrorMsg.swift in Sources */,
+				76211E7F2883DC7F0031AA2F /* MovieUserDefaultsManagerProtocol.swift in Sources */,
 				76BF128528748BB9001740D8 /* TraslateRequestModel.swift in Sources */,
 				76F62E3C2866BDD000028E5C /* TestVC.swift in Sources */,
 				760524842815B70C00C3C243 /* DiaryTabBarController.swift in Sources */,

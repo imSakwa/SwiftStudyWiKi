@@ -12,6 +12,8 @@ protocol MovieListProtocol: AnyObject {
     func setupSearchBar()
     func setupViews()
     func updateSearchTableView(isHidden: Bool)
+    func pushToMovieDetailViewController(with movie: Movie)
+    func updateCollectionView()
 }
 
 final class MovieListPresenter: NSObject {
@@ -19,25 +21,32 @@ final class MovieListPresenter: NSObject {
     
     private let movieSearchManager: MovieSearchManagerProtocol
     
-    private var likedMovie: [Movie] = [
-        Movie(title: "Starwars", imageURL: "", userRating: "5.0", actor: "ABC", director: "ABC", pubDate: "2021"),
-        Movie(title: "Avatar", imageURL: "", userRating: "5.0", actor: "ABC", director: "ABC", pubDate: "2021")
-    ]
+    private let userDefaultsManager: MovieUserDefaultsManagerProtocol
+    
+    private var likedMovie: [Movie] = []
     
     private var currentMovieSearchResult: [Movie] = []
     
     init(
         viewController: MovieListProtocol,
-        movieSearchManager: MovieSearchManagerProtocol = MovieSearchManager()
+        movieSearchManager: MovieSearchManagerProtocol = MovieSearchManager(),
+        userDefaultsManager: MovieUserDefaultsManagerProtocol = MovieUserDefaultsManager()
     ) {
         self.viewController = viewController
         self.movieSearchManager = movieSearchManager
+        self.userDefaultsManager = userDefaultsManager
     }
     
     func viewDidLoad() {
         viewController?.setNavigationBar()
         viewController?.setupSearchBar()
         viewController?.setupViews()
+    }
+    
+    func viewWillAppear() {
+        likedMovie = userDefaultsManager.getMovies()
+        
+        viewController?.updateCollectionView()
     }
 }
 
@@ -66,7 +75,7 @@ extension MovieListPresenter: UICollectionViewDelegateFlowLayout {
         let spacing: CGFloat = 16
         let width: CGFloat = (collectionView.frame.width - spacing * 3) / 2
         
-        return CGSize(width: width, height: 210)
+        return CGSize(width: width, height: 220)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -88,6 +97,12 @@ extension MovieListPresenter: UICollectionViewDataSource {
         
         return cell ?? UICollectionViewCell()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let movie = likedMovie[indexPath.row]
+        
+        viewController?.pushToMovieDetailViewController(with: movie)
+    }
 }
 
 extension MovieListPresenter: UITableViewDelegate {
@@ -103,5 +118,9 @@ extension MovieListPresenter: UITableViewDataSource {
         cell.textLabel?.text = currentMovieSearchResult[indexPath.row].title
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewController?.pushToMovieDetailViewController(with: currentMovieSearchResult[indexPath.row])
     }
 }

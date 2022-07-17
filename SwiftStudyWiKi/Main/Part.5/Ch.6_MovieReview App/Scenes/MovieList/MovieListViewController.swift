@@ -13,7 +13,7 @@ final class MovieListViewController: UIViewController {
     private lazy var presenter = MovieListPresenter(viewController: self)
     
     private let searchController = UISearchController()
-    
+        
     private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout()).then {
         let collectionViewLayout = UICollectionViewFlowLayout()
         $0.collectionViewLayout = collectionViewLayout
@@ -32,6 +32,11 @@ final class MovieListViewController: UIViewController {
         super.viewDidLoad()
         
         presenter.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.viewWillAppear()
     }
 }
 
@@ -69,5 +74,15 @@ extension MovieListViewController: MovieListProtocol {
     func updateSearchTableView(isHidden: Bool) {
         searchResultTableView.isHidden = isHidden
         searchResultTableView.reloadData()
+    }
+    
+    func pushToMovieDetailViewController(with movie: Movie) {
+        let movieDetailViewController = MovieDetailViewController(movie: movie)
+        
+        navigationController?.pushViewController(movieDetailViewController, animated: true)
+    }
+    
+    func updateCollectionView() {
+        collectionView.reloadData()
     }
 }
