@@ -37,6 +37,9 @@
 		76211E992883F4310031AA2F /* MockMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E982883F4310031AA2F /* MockMovieListViewController.swift */; };
 		76211E9B2883F75E0031AA2F /* MovieDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E9A2883F75E0031AA2F /* MovieDetailPresenterTests.swift */; };
 		76211E9D2883F8090031AA2F /* MockMovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E9C2883F8090031AA2F /* MockMovieDetailViewController.swift */; };
+		76211EA02883FF5B0031AA2F /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211E9F2883FF5B0031AA2F /* NewsListViewController.swift */; };
+		76211EA2288400400031AA2F /* NewsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211EA1288400400031AA2F /* NewsListPresenter.swift */; };
+		76211EA8288403730031AA2F /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211EA7288403730031AA2F /* NewsListTableViewCell.swift */; };
 		763181312828039700BA27BE /* DrinkAlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763181302828039700BA27BE /* DrinkAlarmListViewController.swift */; };
 		7631813328280B2600BA27BE /* DrinkAlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631813228280B2600BA27BE /* DrinkAlarmTableViewCell.swift */; };
 		7631813528280CA300BA27BE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631813428280CA300BA27BE /* Alert.swift */; };
@@ -150,6 +153,9 @@
 		76211E982883F4310031AA2F /* MockMovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListViewController.swift; sourceTree = "<group>"; };
 		76211E9A2883F75E0031AA2F /* MovieDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenterTests.swift; sourceTree = "<group>"; };
 		76211E9C2883F8090031AA2F /* MockMovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieDetailViewController.swift; sourceTree = "<group>"; };
+		76211E9F2883FF5B0031AA2F /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		76211EA1288400400031AA2F /* NewsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListPresenter.swift; sourceTree = "<group>"; };
+		76211EA7288403730031AA2F /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
 		7631812E2827FAC200BA27BE /* SwiftStudyWiKi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftStudyWiKi.entitlements; sourceTree = "<group>"; };
 		763181302828039700BA27BE /* DrinkAlarmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAlarmListViewController.swift; sourceTree = "<group>"; };
 		7631813228280B2600BA27BE /* DrinkAlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAlarmTableViewCell.swift; sourceTree = "<group>"; };
@@ -365,6 +371,32 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		76211E9E2883FF3F0031AA2F /* Ch.7_News App */ = {
+			isa = PBXGroup;
+			children = (
+				76211EA6288400660031AA2F /* Scenes */,
+			);
+			path = "Ch.7_News App";
+			sourceTree = "<group>";
+		};
+		76211EA4288400530031AA2F /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				76211EA7288403730031AA2F /* NewsListTableViewCell.swift */,
+				76211E9F2883FF5B0031AA2F /* NewsListViewController.swift */,
+				76211EA1288400400031AA2F /* NewsListPresenter.swift */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		76211EA6288400660031AA2F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				76211EA4288400530031AA2F /* NewsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		7631812F2828035100BA27BE /* Ch.4_Drink */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +499,7 @@
 				76BF126828740F49001740D8 /* Ch.4_Translate App */,
 				76BF12932875D80B001740D8 /* Ch.5_BookReview App */,
 				76211E642881B2060031AA2F /* Ch.6_MovieReview App */,
+				76211E9E2883FF3F0031AA2F /* Ch.7_News App */,
 			);
 			path = Part.5;
 			sourceTree = "<group>";
@@ -909,15 +942,18 @@
 				76BF12C4287AABCB001740D8 /* SearchBookPresenter.swift in Sources */,
 				76BF12B62875DBB4001740D8 /* ReviewListViewController.swift in Sources */,
 				7631813728280E6F00BA27BE /* DrinkAddAlarmViewController.swift in Sources */,
+				76211EA02883FF5B0031AA2F /* NewsListViewController.swift in Sources */,
 				76211E7B288305550031AA2F /* MovieDetailPresenter.swift in Sources */,
 				76BF127728743233001740D8 /* Bookmark.swift in Sources */,
 				76211E692881B3280031AA2F /* MovieSearchResponseMoel.swift in Sources */,
 				76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */,
 				763181312828039700BA27BE /* DrinkAlarmListViewController.swift in Sources */,
 				76A5878A2821767500D8D3DB /* CovidViewController.swift in Sources */,
+				76211EA2288400400031AA2F /* NewsListPresenter.swift in Sources */,
 				76BF12792874349F001740D8 /* UserDefaults+.swift in Sources */,
 				76D675EE28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift in Sources */,
 				76211E732881B6DF0031AA2F /* MovieListPresenter.swift in Sources */,
+				76211EA8288403730031AA2F /* NewsListTableViewCell.swift in Sources */,
 				76BF127E28743AB7001740D8 /* BookmarkCollectionViewCell.swift in Sources */,
 				76BF12C7287AB319001740D8 /* BookSearchRequestModel.swift in Sources */,
 				76BF128928748CC1001740D8 /* TranslatorManager.swift in Sources */,
