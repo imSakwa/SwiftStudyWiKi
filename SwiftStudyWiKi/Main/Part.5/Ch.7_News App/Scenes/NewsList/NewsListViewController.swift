@@ -32,6 +32,8 @@ final class NewsListViewController: UIViewController {
 
 extension NewsListViewController: NewsListProtocol {
     func setupNavigationBar() {
+        
+        
         view.backgroundColor = .systemBackground
         navigationItem.title = "NEWS"
         navigationController?.navigationBar.prefersLargeTitles = true
