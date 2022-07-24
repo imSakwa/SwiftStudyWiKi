@@ -11,25 +11,39 @@ protocol NewsListProtocol: AnyObject {
     func setupNavigationBar()
     func setupLayout()
     func endRefreshing()
-    func moveToNewsWebViewController()
+    func moveToNewsWebViewController(with news: News)
+    func reloadTableView()
 }
 
 final class NewsListPresenter: NSObject {
     private weak var viewController: NewsListProtocol?
+    private let newsSearchManager: NewsSearchManagerProtocol
+    
+    private var newsList: [News] = []
+    private var currentKeyword: String = "아이폰"
+    // 현재의 페이지
+    private var currentPage: Int = 0
+    // 몇 개를 보여줄 것 인지
+    private let display: Int = 20
+    
     
     init(
-        viewController: NewsListProtocol
+        viewController: NewsListProtocol,
+        newsSearchManager: NewsSearchManagerProtocol = NewsSearchManager()
     ) {
         self.viewController = viewController
+        self.newsSearchManager = newsSearchManager
     }
     
     func viewDidLoad() {
         viewController?.setupNavigationBar()
         viewController?.setupLayout()
+        
+        requestNewsList()
     }
     
     func didCalledRefresh() {
-        viewController?.endRefreshing()
+        requestNewsList(isNeededToReset: true)
     }
 }
 
@@ -39,7 +53,7 @@ extension NewsListPresenter: UITableViewDelegate {
 
 extension NewsListPresenter: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return newsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,7 +62,7 @@ extension NewsListPresenter: UITableViewDataSource {
             for: indexPath
         ) as? NewsListTableViewCell
         
-        cell?.setup()
+        cell?.setup(news: newsList[indexPath.row])
         
         return cell ?? UITableViewCell()
     }
@@ -63,8 +77,33 @@ extension NewsListPresenter: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        viewController?.moveToNewsWebViewController()
+        viewController?.moveToNewsWebViewController(with: newsList[indexPath.row])
     }
     
-    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let currentRow = indexPath.row
+        
+        guard (currentRow % 20 == display - 3) && (currentRow / display == currentPage - 1)else { return }
+        
+        requestNewsList()
+    }
+}
+
+private extension NewsListPresenter {
+    func requestNewsList(isNeededToReset: Bool = false) {
+        if isNeededToReset {
+            currentPage = 0
+            newsList = []
+        }
+        newsSearchManager.request(
+            from: currentKeyword,
+            start: (currentPage * display) + 1,
+            display: display
+        ) { [weak self] newValue in
+            self?.newsList += newValue
+            self?.currentPage += 1
+            self?.viewController?.reloadTableView()
+            self?.viewController?.endRefreshing()
+        }
+    }
 }
