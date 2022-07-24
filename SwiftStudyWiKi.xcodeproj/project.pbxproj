@@ -106,6 +106,9 @@
 		76E12E7B287ADE5F0002F2A5 /* MockReviewWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E12E7A287ADE5F0002F2A5 /* MockReviewWriteViewController.swift */; };
 		76EE132F2826BCD1000C4E59 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 76EE132E2826BCD1000C4E59 /* GoogleSignIn */; };
 		76F62E3C2866BDD000028E5C /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F62E3B2866BDD000028E5C /* TestVC.swift */; };
+		9DE28C989283B2A5102B9172 /* Pods_SwiftStudyWiKiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA50071A29200CB545799E8F /* Pods_SwiftStudyWiKiTests.framework */; };
+		C84C8E5F4AA52372F15D97FA /* Pods_SwiftStudyWiKi_SwiftStudyWiKiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815438606C53F61D17CEB251 /* Pods_SwiftStudyWiKi_SwiftStudyWiKiUITests.framework */; };
+		EBFB136B36AFAB7A5BC2F19F /* Pods_SwiftStudyWiKi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02598D6D9D753A9DBF93701F /* Pods_SwiftStudyWiKi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +129,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02598D6D9D753A9DBF93701F /* Pods_SwiftStudyWiKi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyWiKi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACD1323D867026C5CDD2D8C /* Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests/Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5AF9656E211D23D5ADA66FE8 /* Pods-SwiftStudyWiKiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKiTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKiTests/Pods-SwiftStudyWiKiTests.release.xcconfig"; sourceTree = "<group>"; };
 		760524812815B43900C3C243 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		760524832815B70C00C3C243 /* DiaryTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTabBarController.swift; sourceTree = "<group>"; };
 		760524852815B7DD00C3C243 /* DiaryFavoItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryFavoItemViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +228,12 @@
 		76E12E78287AD9110002F2A5 /* ReviewWritePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWritePresenterTests.swift; sourceTree = "<group>"; };
 		76E12E7A287ADE5F0002F2A5 /* MockReviewWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReviewWriteViewController.swift; sourceTree = "<group>"; };
 		76F62E3B2866BDD000028E5C /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		815438606C53F61D17CEB251 /* Pods_SwiftStudyWiKi_SwiftStudyWiKiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyWiKi_SwiftStudyWiKiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7054BBD941EE43BFECF650 /* Pods-SwiftStudyWiKi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi.release.xcconfig"; sourceTree = "<group>"; };
+		9EB11440D531E78C5F325CBD /* Pods-SwiftStudyWiKi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi.debug.xcconfig"; sourceTree = "<group>"; };
+		D01543DC174F4B21E0C2C64E /* Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests/Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9D2BF0ABFEFFC2BABD7D019 /* Pods-SwiftStudyWiKiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKiTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKiTests/Pods-SwiftStudyWiKiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA50071A29200CB545799E8F /* Pods_SwiftStudyWiKiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyWiKiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84C8E5F4AA52372F15D97FA /* Pods_SwiftStudyWiKi_SwiftStudyWiKiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +259,7 @@
 				760DE88A2822C02900F8683E /* RxSwift in Frameworks */,
 				76D675F52825733F00A6EE21 /* FirebaseAuth in Frameworks */,
 				76EE132F2826BCD1000C4E59 /* GoogleSignIn in Frameworks */,
+				EBFB136B36AFAB7A5BC2F19F /* Pods_SwiftStudyWiKi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +267,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE28C989283B2A5102B9172 /* Pods_SwiftStudyWiKiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +277,9 @@
 		63754EF5D8E8C8DFE1E2087E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02598D6D9D753A9DBF93701F /* Pods_SwiftStudyWiKi.framework */,
+				815438606C53F61D17CEB251 /* Pods_SwiftStudyWiKi_SwiftStudyWiKiUITests.framework */,
+				EA50071A29200CB545799E8F /* Pods_SwiftStudyWiKiTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -417,6 +435,7 @@
 				76211E852883E5FB0031AA2F /* SwiftStudyWiKiUITests */,
 				764125F127CA6D2A0041EC89 /* Products */,
 				63754EF5D8E8C8DFE1E2087E /* Frameworks */,
+				AE13C51BDE9C6D5C679EBF70 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -751,6 +770,20 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		AE13C51BDE9C6D5C679EBF70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EB11440D531E78C5F325CBD /* Pods-SwiftStudyWiKi.debug.xcconfig */,
+				8D7054BBD941EE43BFECF650 /* Pods-SwiftStudyWiKi.release.xcconfig */,
+				D01543DC174F4B21E0C2C64E /* Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests.debug.xcconfig */,
+				3ACD1323D867026C5CDD2D8C /* Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests.release.xcconfig */,
+				E9D2BF0ABFEFFC2BABD7D019 /* Pods-SwiftStudyWiKiTests.debug.xcconfig */,
+				5AF9656E211D23D5ADA66FE8 /* Pods-SwiftStudyWiKiTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -758,6 +791,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76211E8C2883E5FB0031AA2F /* Build configuration list for PBXNativeTarget "SwiftStudyWiKiUITests" */;
 			buildPhases = (
+				0EBE009F3B90ADC5DAABCE66 /* [CP] Check Pods Manifest.lock */,
 				76211E802883E5FB0031AA2F /* Sources */,
 				76211E812883E5FB0031AA2F /* Frameworks */,
 				76211E822883E5FB0031AA2F /* Resources */,
@@ -776,6 +810,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7641260427CA6D2B0041EC89 /* Build configuration list for PBXNativeTarget "SwiftStudyWiKi" */;
 			buildPhases = (
+				DA177484C54D1F31FE221635 /* [CP] Check Pods Manifest.lock */,
 				764125EC27CA6D2A0041EC89 /* Sources */,
 				764125ED27CA6D2A0041EC89 /* Frameworks */,
 				764125EE27CA6D2A0041EC89 /* Resources */,
@@ -805,9 +840,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76E12E6C287AD2510002F2A5 /* Build configuration list for PBXNativeTarget "SwiftStudyWiKiTests" */;
 			buildPhases = (
+				50813F84F713D4228A67251D /* [CP] Check Pods Manifest.lock */,
 				76E12E62287AD2510002F2A5 /* Sources */,
 				76E12E63287AD2510002F2A5 /* Frameworks */,
 				76E12E64287AD2510002F2A5 /* Resources */,
+				58E9F175763574B5F9E80715 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -860,7 +897,7 @@
 				7643FBAA2822C131002D9894 /* XCRemoteSwiftPackageReference "Charts" */,
 				76D675F32825733F00A6EE21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				76EE132D2826BCD1000C4E59 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
 			);
 			productRefGroup = 764125F127CA6D2A0041EC89 /* Products */;
 			projectDirPath = "";
@@ -900,6 +937,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EBE009F3B90ADC5DAABCE66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50813F84F713D4228A67251D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftStudyWiKiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58E9F175763574B5F9E80715 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftStudyWiKiTests/Pods-SwiftStudyWiKiTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftStudyWiKiTests/Pods-SwiftStudyWiKiTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftStudyWiKiTests/Pods-SwiftStudyWiKiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA177484C54D1F31FE221635 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftStudyWiKi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76211E802883E5FB0031AA2F /* Sources */ = {
@@ -1047,6 +1170,7 @@
 /* Begin XCBuildConfiguration section */
 		76211E8D2883E5FB0031AA2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D01543DC174F4B21E0C2C64E /* Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1066,6 +1190,7 @@
 		};
 		76211E8E2883E5FB0031AA2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ACD1323D867026C5CDD2D8C /* Pods-SwiftStudyWiKi-SwiftStudyWiKiUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1206,6 +1331,7 @@
 		};
 		7641260527CA6D2B0041EC89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB11440D531E78C5F325CBD /* Pods-SwiftStudyWiKi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1236,6 +1362,7 @@
 		};
 		7641260627CA6D2B0041EC89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D7054BBD941EE43BFECF650 /* Pods-SwiftStudyWiKi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1266,6 +1393,7 @@
 		};
 		76E12E6D287AD2510002F2A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9D2BF0ABFEFFC2BABD7D019 /* Pods-SwiftStudyWiKiTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1286,6 +1414,7 @@
 		};
 		76E12E6E287AD2510002F2A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF9656E211D23D5ADA66FE8 /* Pods-SwiftStudyWiKiTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1386,7 +1515,7 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -1450,7 +1579,7 @@
 		};
 		76BF12B32875DAB2001740D8 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
 			productName = Kingfisher;
 		};
 		76D675F42825733F00A6EE21 /* FirebaseAuth */ = {

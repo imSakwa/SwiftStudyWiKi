@@ -1,0 +1,6 @@
+framework module Pods_SwiftStudyWiKiTests {
+  umbrella header "Pods-SwiftStudyWiKiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
