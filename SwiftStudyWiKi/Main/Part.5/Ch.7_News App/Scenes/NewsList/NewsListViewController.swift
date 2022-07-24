@@ -21,6 +21,7 @@ final class NewsListViewController: UIViewController {
         $0.dataSource = presenter
         $0.register(NewsListTableViewCell.self, forCellReuseIdentifier: NewsListTableViewCell.identifier)
         $0.refreshControl = refreshControl
+        $0.register(NewsListTableHeaderView.self, forHeaderFooterViewReuseIdentifier: NewsListTableHeaderView.identifier)
     }
     
     override func viewDidLoad() {
@@ -49,6 +50,12 @@ extension NewsListViewController: NewsListProtocol {
     
     func endRefreshing() {
         refreshControl.endRefreshing()
+    }
+    
+    func moveToNewsWebViewController() {
+        let newsWebVC = NewsWebViewController()
+        
+        navigationController?.pushViewController(newsWebVC, animated: true)
     }
 }
 

@@ -54,6 +54,7 @@
 		7643FBA62822C0AF002D9894 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7643FBA52822C0AF002D9894 /* Then */; };
 		7643FBA92822C0F6002D9894 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7643FBA82822C0F6002D9894 /* Alamofire */; };
 		7643FBAC2822C131002D9894 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 7643FBAB2822C131002D9894 /* Charts */; };
+		765B647C288D1F4600AEB816 /* Pods_SwiftStudyWiKi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02598D6D9D753A9DBF93701F /* Pods_SwiftStudyWiKi.framework */; };
 		76A4D04B2857858F00DCC34C /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A4D04A2857858F00DCC34C /* AlamofireViewController.swift */; };
 		76A58783282160B300D8D3DB /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A58782282160B300D8D3DB /* WeatherViewController.swift */; };
 		76A5878528216F8200D8D3DB /* WeatherInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5878428216F8200D8D3DB /* WeatherInformation.swift */; };
@@ -61,6 +62,7 @@
 		76A5878A2821767500D8D3DB /* CovidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A587892821767500D8D3DB /* CovidViewController.swift */; };
 		76A90FDF2803110C007A3C81 /* LEDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FDE2803110C007A3C81 /* LEDViewController.swift */; };
 		76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A90FE0280316B0007A3C81 /* SettingViewController.swift */; };
+		76BDE15F288D230D00527FAB /* NewsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BDE15E288D230D00527FAB /* NewsWebViewController.swift */; };
 		76BF126A28741543001740D8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF126928741543001740D8 /* TabBarController.swift */; };
 		76BF126D2874164E001740D8 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF126C2874164E001740D8 /* TranslateViewController.swift */; };
 		76BF126F28741B93001740D8 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF126E28741B93001740D8 /* UIColor+.swift */; };
@@ -106,9 +108,9 @@
 		76E12E7B287ADE5F0002F2A5 /* MockReviewWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E12E7A287ADE5F0002F2A5 /* MockReviewWriteViewController.swift */; };
 		76EE132F2826BCD1000C4E59 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 76EE132E2826BCD1000C4E59 /* GoogleSignIn */; };
 		76F62E3C2866BDD000028E5C /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F62E3B2866BDD000028E5C /* TestVC.swift */; };
+		76F76DDC288D15FE000705F9 /* NewsListTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F76DDB288D15FE000705F9 /* NewsListTableHeaderView.swift */; };
 		9DE28C989283B2A5102B9172 /* Pods_SwiftStudyWiKiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA50071A29200CB545799E8F /* Pods_SwiftStudyWiKiTests.framework */; };
 		C84C8E5F4AA52372F15D97FA /* Pods_SwiftStudyWiKi_SwiftStudyWiKiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815438606C53F61D17CEB251 /* Pods_SwiftStudyWiKi_SwiftStudyWiKiUITests.framework */; };
-		EBFB136B36AFAB7A5BC2F19F /* Pods_SwiftStudyWiKi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02598D6D9D753A9DBF93701F /* Pods_SwiftStudyWiKi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +178,7 @@
 		764125FC27CA6D2B0041EC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764125FF27CA6D2B0041EC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7641260127CA6D2B0041EC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		765B6475288D19D900AEB816 /* TTGTags.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TTGTags.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A4D04A2857858F00DCC34C /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 		76A58782282160B300D8D3DB /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		76A5878428216F8200D8D3DB /* WeatherInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInformation.swift; sourceTree = "<group>"; };
@@ -183,6 +186,7 @@
 		76A587892821767500D8D3DB /* CovidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidViewController.swift; sourceTree = "<group>"; };
 		76A90FDE2803110C007A3C81 /* LEDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDViewController.swift; sourceTree = "<group>"; };
 		76A90FE0280316B0007A3C81 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		76BDE15E288D230D00527FAB /* NewsWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebViewController.swift; sourceTree = "<group>"; };
 		76BF126928741543001740D8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		76BF126C2874164E001740D8 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		76BF126E28741B93001740D8 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 		76E12E78287AD9110002F2A5 /* ReviewWritePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWritePresenterTests.swift; sourceTree = "<group>"; };
 		76E12E7A287ADE5F0002F2A5 /* MockReviewWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReviewWriteViewController.swift; sourceTree = "<group>"; };
 		76F62E3B2866BDD000028E5C /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		76F76DDB288D15FE000705F9 /* NewsListTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableHeaderView.swift; sourceTree = "<group>"; };
 		815438606C53F61D17CEB251 /* Pods_SwiftStudyWiKi_SwiftStudyWiKiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyWiKi_SwiftStudyWiKiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7054BBD941EE43BFECF650 /* Pods-SwiftStudyWiKi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi.release.xcconfig"; sourceTree = "<group>"; };
 		9EB11440D531E78C5F325CBD /* Pods-SwiftStudyWiKi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyWiKi.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudyWiKi/Pods-SwiftStudyWiKi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -259,7 +264,7 @@
 				760DE88A2822C02900F8683E /* RxSwift in Frameworks */,
 				76D675F52825733F00A6EE21 /* FirebaseAuth in Frameworks */,
 				76EE132F2826BCD1000C4E59 /* GoogleSignIn in Frameworks */,
-				EBFB136B36AFAB7A5BC2F19F /* Pods_SwiftStudyWiKi.framework in Frameworks */,
+				765B647C288D1F4600AEB816 /* Pods_SwiftStudyWiKi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +282,7 @@
 		63754EF5D8E8C8DFE1E2087E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				765B6475288D19D900AEB816 /* TTGTags.framework */,
 				02598D6D9D753A9DBF93701F /* Pods_SwiftStudyWiKi.framework */,
 				815438606C53F61D17CEB251 /* Pods_SwiftStudyWiKi_SwiftStudyWiKiUITests.framework */,
 				EA50071A29200CB545799E8F /* Pods_SwiftStudyWiKiTests.framework */,
@@ -403,6 +409,7 @@
 				76211EA7288403730031AA2F /* NewsListTableViewCell.swift */,
 				76211E9F2883FF5B0031AA2F /* NewsListViewController.swift */,
 				76211EA1288400400031AA2F /* NewsListPresenter.swift */,
+				76F76DDB288D15FE000705F9 /* NewsListTableHeaderView.swift */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -410,6 +417,7 @@
 		76211EA6288400660031AA2F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				76BDE15D288D230100527FAB /* NewsWeb */,
 				76211EA4288400530031AA2F /* NewsList */,
 			);
 			path = Scenes;
@@ -510,6 +518,14 @@
 				76A90FE0280316B0007A3C81 /* SettingViewController.swift */,
 			);
 			path = Ch.2_LED;
+			sourceTree = "<group>";
+		};
+		76BDE15D288D230100527FAB /* NewsWeb */ = {
+			isa = PBXGroup;
+			children = (
+				76BDE15E288D230D00527FAB /* NewsWebViewController.swift */,
+			);
+			path = NewsWeb;
 			sourceTree = "<group>";
 		};
 		76BF126728740F33001740D8 /* Part.5 */ = {
@@ -780,7 +796,6 @@
 				E9D2BF0ABFEFFC2BABD7D019 /* Pods-SwiftStudyWiKiTests.debug.xcconfig */,
 				5AF9656E211D23D5ADA66FE8 /* Pods-SwiftStudyWiKiTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -897,7 +912,7 @@
 				7643FBAA2822C131002D9894 /* XCRemoteSwiftPackageReference "Charts" */,
 				76D675F32825733F00A6EE21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				76EE132D2826BCD1000C4E59 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
+				76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 764125F127CA6D2A0041EC89 /* Products */;
 			projectDirPath = "";
@@ -1039,6 +1054,7 @@
 			files = (
 				76BF127C28743779001740D8 /* BookmarkListViewController.swift in Sources */,
 				764125F827CA6D2A0041EC89 /* MainViewController.swift in Sources */,
+				76BDE15F288D230D00527FAB /* NewsWebViewController.swift in Sources */,
 				760DE87528217EA100F8683E /* CovidDetailViewController.swift in Sources */,
 				76A58783282160B300D8D3DB /* WeatherViewController.swift in Sources */,
 				76211E712881B5E80031AA2F /* MovieListViewController.swift in Sources */,
@@ -1068,6 +1084,7 @@
 				76211EA02883FF5B0031AA2F /* NewsListViewController.swift in Sources */,
 				76211E7B288305550031AA2F /* MovieDetailPresenter.swift in Sources */,
 				76BF127728743233001740D8 /* Bookmark.swift in Sources */,
+				76F76DDC288D15FE000705F9 /* NewsListTableHeaderView.swift in Sources */,
 				76211E692881B3280031AA2F /* MovieSearchResponseMoel.swift in Sources */,
 				76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */,
 				763181312828039700BA27BE /* DrinkAlarmListViewController.swift in Sources */,
@@ -1515,7 +1532,7 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
+		76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -1579,7 +1596,7 @@
 		};
 		76BF12B32875DAB2001740D8 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
+			package = 76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 		76D675F42825733F00A6EE21 /* FirebaseAuth */ = {
