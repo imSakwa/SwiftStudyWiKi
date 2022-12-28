@@ -6,12 +6,12 @@
 //
 
 import UIKit
-import SnapKit
-import Then
 
-class MainViewController: UIViewController {
+import SnapKit
+
+final class MainViewController: UIViewController {
     
-    let cellTitleArr = [
+    private let cellTitleArr = [
         [
             "1. Prefetch",
             "2. 명언 생성기",
@@ -35,78 +35,71 @@ class MainViewController: UIViewController {
         ]
     ]
     
-    let naviBarView = UIView().then {
-        $0.backgroundColor = .white
-    }
+    private lazy var naviBarView: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .white
+        return view
+    }()
     
-    let naviTestButton = UIButton(type: .custom).then {
-        $0.addTarget(self, action: #selector(clickNaviTestBtn), for: .touchUpInside)
-        $0.setImage(UIImage(systemName: "heart"), for: .normal)
-        $0.setImage(UIImage(systemName: "heart.fill"), for: .selected)
-        $0.tintColor = .red
-    }
+    private lazy var naviTestButton: UIButton = {
+        let button = UIButton(frame: .zero)
+        button.addTarget(self, action: #selector(clickNaviTestBtn), for: .touchUpInside)
+        button.setImage(UIImage(systemName: "heart"), for: .normal)
+        button.setImage(UIImage(systemName: "heart.fill"), for: .selected)
+        button.tintColor = .red
+        return button
+    }()
     
-    let naviTitleLbl = UILabel().then {
-        $0.font = .systemFont(ofSize: 16, weight: .bold)
-        $0.textColor = .black
-        $0.text = "Chagmn's Swift WiKi"
-    }
+    private lazy var naviTitleLbl: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 16, weight: .bold)
+        label.textColor = .black
+        label.text = "Chagmn's Swift WiKi"
+        return label
+    }()
     
-    
-    let subjectTableView = UITableView(frame: .zero, style: .insetGrouped)
+    private lazy var subjectTableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .insetGrouped)
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(SubjectTableCell.self, forCellReuseIdentifier: "SubjectCell")
+        return tableView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
-        
-        self.navigationController?.isNavigationBarHidden = true
+        view.backgroundColor = .white
+        navigationController?.isNavigationBarHidden = true
         
         setLayout()
-        setSubjectTableView()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         
-    }
-    
     @objc func clickNaviTestBtn(_ sender: UIButton) {
-        if sender.isSelected {
-            sender.isSelected = false
-        } else {
-            sender.isSelected = true
-        }
-    }
-    
-    private func setSubjectTableView() {
-        subjectTableView.dataSource = self
-        subjectTableView.delegate = self
-        subjectTableView.register(SubjectTableCell.self, forCellReuseIdentifier: "SubjectCell")
+        sender.isSelected = !sender.isSelected
     }
     
     private func setLayout() {
-        self.view.addSubview(naviBarView)
+        [naviBarView, subjectTableView].forEach { view.addSubview($0) }
+        [naviTestButton, naviTitleLbl].forEach { naviBarView.addSubview($0) }
+        
         naviBarView.snp.makeConstraints {
             $0.height.equalTo(50)
-            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             $0.leading.trailing.equalToSuperview()
         }
         
-        naviBarView.addSubview(naviTestButton)
         naviTestButton.snp.makeConstraints {
             $0.trailing.equalToSuperview().inset(10)
             $0.size.equalTo(24)
             $0.centerY.equalToSuperview()
         }
         
-        naviBarView.addSubview(naviTitleLbl)
         naviTitleLbl.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.centerX.equalToSuperview()
             $0.height.equalTo(20)
         }
         
-        self.view.addSubview(subjectTableView)
         subjectTableView.snp.makeConstraints {
             $0.top.equalTo(naviBarView.snp.bottom)
             $0.leading.trailing.bottom.equalToSuperview()
@@ -125,10 +118,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SubjectCell", for: indexPath) as? SubjectTableCell else {
             return UITableViewCell()
         }
-        
-        cell.titleLbl.text = cellTitleArr[indexPath.section][indexPath.row]
-        cell.nextIcon.tintColor = .black
-        cell.selectionStyle = .none
+        cell.setupData(data: cellTitleArr[indexPath.section][indexPath.row])
         
         return cell
     }
@@ -140,28 +130,22 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         backBarButtonItem.tintColor = .black
-        self.navigationItem.backBarButtonItem = backBarButtonItem
+        navigationItem.backBarButtonItem = backBarButtonItem
 
         if indexPath.section == 0 {
             switch indexPath.row {
             case 0:
-                self.navigationController?.pushViewController(PrefetchViewController(), animated: true)
-                
+                navigationController?.pushViewController(PrefetchViewController(), animated: true)
             case 1:
-                self.navigationController?.pushViewController(QuotesGeneratorViewController(), animated: true)
-                
+                navigationController?.pushViewController(QuotesGeneratorViewController(), animated: true)
             case 2:
-                self.navigationController?.pushViewController(LEDViewController(), animated: true)
-                
+                navigationController?.pushViewController(LEDViewController(), animated: true)
             case 4:
-                self.navigationController?.pushViewController(DiaryTabBarController(), animated: true)
-                
+                navigationController?.pushViewController(DiaryTabBarController(), animated: true)
             case 6:
-                self.navigationController?.pushViewController(WeatherViewController(), animated: true)
-                
+                navigationController?.pushViewController(WeatherViewController(), animated: true)
             case 7:
-                self.navigationController?.pushViewController(CovidViewController(), animated: true)
-                
+                navigationController?.pushViewController(CovidViewController(), animated: true)
             default:
                 break
             }
@@ -170,14 +154,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             switch indexPath.row {
             case 0:
                 //AlamofireViewController
-                self.navigationController?.pushViewController(TestVC(), animated: true)
-                
+                navigationController?.pushViewController(TestVC(), animated: true)
             case 1:
-                self.navigationController?.pushViewController(SpotifyLoginViewController(), animated: true)
-                
+                navigationController?.pushViewController(SpotifyLoginViewController(), animated: true)
             case 2:
-                self.navigationController?.pushViewController(DrinkAlarmListViewController(style: .grouped), animated: true)
-            
+                navigationController?.pushViewController(DrinkAlarmListViewController(style: .grouped), animated: true)
             default:
                 break
             }
@@ -186,31 +167,28 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             case 0:
                 let tabBarVC = TabBarController()
                 tabBarVC.view.tintColor = .mainTintColor
-                self.navigationController?.pushViewController(tabBarVC, animated: true)
+                navigationController?.pushViewController(tabBarVC, animated: true)
                 
             case 1:
                 let reviewVC = ReviewListViewController()
-                
                 let naviVC = UINavigationController(rootViewController: reviewVC)
                 naviVC.modalPresentationStyle = .fullScreen
                 
-                self.present(naviVC, animated: true)
+                present(naviVC, animated: true)
                 
             case 2:
                 let movieReviewVC = MovieListViewController()
-                
                 let naviVC = UINavigationController(rootViewController: movieReviewVC)
                 naviVC.modalPresentationStyle = .fullScreen
                 
-                self.present(naviVC, animated: true)
+                present(naviVC, animated: true)
                 
             case 3:
                 let newsVC = NewsListViewController()
-                
                 let naviVC = UINavigationController(rootViewController: newsVC)
                 naviVC.modalPresentationStyle = .fullScreen
                 
-                self.present(naviVC, animated: true)
+                present(naviVC, animated: true)
             
             default:
                 break

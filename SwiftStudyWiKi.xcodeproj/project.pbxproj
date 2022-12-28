@@ -53,7 +53,7 @@
 		7641260027CA6D2B0041EC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764125FE27CA6D2B0041EC89 /* LaunchScreen.storyboard */; };
 		7643FBA62822C0AF002D9894 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7643FBA52822C0AF002D9894 /* Then */; };
 		7643FBA92822C0F6002D9894 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7643FBA82822C0F6002D9894 /* Alamofire */; };
-		7643FBAC2822C131002D9894 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 7643FBAB2822C131002D9894 /* Charts */; };
+		76445297295CA7CD003B0D65 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 76445296295CA7CD003B0D65 /* Charts */; };
 		765B647C288D1F4600AEB816 /* Pods_SwiftStudyWiKi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02598D6D9D753A9DBF93701F /* Pods_SwiftStudyWiKi.framework */; };
 		7682A9CA288D2A7E008A1A50 /* NewsSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682A9C9288D2A7E008A1A50 /* NewsSearchManager.swift */; };
 		7682A9CD288D2FA7008A1A50 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682A9CC288D2FA7008A1A50 /* String+.swift */; };
@@ -267,7 +267,7 @@
 				7643FBA92822C0F6002D9894 /* Alamofire in Frameworks */,
 				7643FBA62822C0AF002D9894 /* Then in Frameworks */,
 				76BF12B42875DAB2001740D8 /* Kingfisher in Frameworks */,
-				7643FBAC2822C131002D9894 /* Charts in Frameworks */,
+				76445297295CA7CD003B0D65 /* Charts in Frameworks */,
 				760DE88F2822C06A00F8683E /* SnapKit in Frameworks */,
 				760DE88A2822C02900F8683E /* RxSwift in Frameworks */,
 				76D675F52825733F00A6EE21 /* FirebaseAuth in Frameworks */,
@@ -870,10 +870,10 @@
 				760DE88E2822C06A00F8683E /* SnapKit */,
 				7643FBA52822C0AF002D9894 /* Then */,
 				7643FBA82822C0F6002D9894 /* Alamofire */,
-				7643FBAB2822C131002D9894 /* Charts */,
 				76D675F42825733F00A6EE21 /* FirebaseAuth */,
 				76EE132E2826BCD1000C4E59 /* GoogleSignIn */,
 				76BF12B32875DAB2001740D8 /* Kingfisher */,
+				76445296295CA7CD003B0D65 /* Charts */,
 			);
 			productName = SwiftStudyWiKi;
 			productReference = 764125F027CA6D2A0041EC89 /* SwiftStudyWiKi.app */;
@@ -937,10 +937,10 @@
 				760DE88D2822C06A00F8683E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				7643FBA42822C0AF002D9894 /* XCRemoteSwiftPackageReference "Then" */,
 				7643FBA72822C0F6002D9894 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				7643FBAA2822C131002D9894 /* XCRemoteSwiftPackageReference "Charts" */,
 				76D675F32825733F00A6EE21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				76EE132D2826BCD1000C4E59 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				76445295295CA7CD003B0D65 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 764125F127CA6D2A0041EC89 /* Products */;
 			projectDirPath = "";
@@ -1556,12 +1556,12 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		7643FBAA2822C131002D9894 /* XCRemoteSwiftPackageReference "Charts" */ = {
+		76445295295CA7CD003B0D65 /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				minimumVersion = 4.1.0;
 			};
 		};
 		76BF12B22875DAB2001740D8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
@@ -1621,9 +1621,9 @@
 			package = 7643FBA72822C0F6002D9894 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		7643FBAB2822C131002D9894 /* Charts */ = {
+		76445296295CA7CD003B0D65 /* Charts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7643FBAA2822C131002D9894 /* XCRemoteSwiftPackageReference "Charts" */;
+			package = 76445295295CA7CD003B0D65 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
 		};
 		76BF12B32875DAB2001740D8 /* Kingfisher */ = {

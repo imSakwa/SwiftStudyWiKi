@@ -7,12 +7,11 @@
 
 import UIKit
 
-class MyNavigationController: UINavigationController {
+final class MyNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         let appearance = UINavigationBarAppearance()
         appearance.configureWithDefaultBackground()
         
@@ -20,12 +19,12 @@ class MyNavigationController: UINavigationController {
         appearance.shadowColor = .clear
         appearance.titleTextAttributes =  [NSAttributedString.Key.foregroundColor: UIColor.brown]
           
-        self.navigationController?.navigationBar.tintColor = .yellow
-        self.navigationController?.navigationBar.standardAppearance = appearance
-        self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
-        self.navigationBar.setNeedsLayout()
+        navigationController?.navigationBar.tintColor = .yellow
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
+        navigationBar.setNeedsLayout()
         
-        self.navigationBar.frame.size = self.navigationBar.sizeThatFits(CGSize(width: self.navigationBar.frame.size.width, height: 50))
+        navigationBar.frame.size = navigationBar.sizeThatFits(CGSize(width: navigationBar.frame.size.width, height: 50))
     }
     
     func setNaviBarColor() {
@@ -36,9 +35,9 @@ class MyNavigationController: UINavigationController {
         appearance.shadowColor = .clear
         appearance.titleTextAttributes =  [NSAttributedString.Key.foregroundColor: UIColor.brown]
           
-        self.navigationController?.navigationBar.tintColor = .yellow
-        self.navigationController?.navigationBar.standardAppearance = appearance
-        self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
+        navigationController?.navigationBar.tintColor = .yellow
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
     }
 }
 
