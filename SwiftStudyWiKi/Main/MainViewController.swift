@@ -13,7 +13,6 @@ final class MainViewController: UIViewController {
     
     private let cellTitleArr = [
         [
-            "1. Prefetch",
             "2. 명언 생성기",
             "3. LED",
             "4. ????",
@@ -32,6 +31,9 @@ final class MainViewController: UIViewController {
             "2. BookReview App",
             "3. MovieReview App",
             "4. News App"
+        ],
+        [
+            "1. textView 연습"
         ]
     ]
     
@@ -128,23 +130,22 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
-        backBarButtonItem.tintColor = .black
-        navigationItem.backBarButtonItem = backBarButtonItem
+//        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+//        backBarButtonItem.tintColor = .black
+//        navigationItem.backBarButtonItem = backBarButtonItem
+        navigationController?.navigationItem.leftItemsSupplementBackButton = true
 
         if indexPath.section == 0 {
             switch indexPath.row {
             case 0:
-                navigationController?.pushViewController(PrefetchViewController(), animated: true)
-            case 1:
                 navigationController?.pushViewController(QuotesGeneratorViewController(), animated: true)
-            case 2:
+            case 1:
                 navigationController?.pushViewController(LEDViewController(), animated: true)
-            case 4:
+            case 3:
                 navigationController?.pushViewController(DiaryTabBarController(), animated: true)
-            case 6:
+            case 5:
                 navigationController?.pushViewController(WeatherViewController(), animated: true)
-            case 7:
+            case 6:
                 navigationController?.pushViewController(CovidViewController(), animated: true)
             default:
                 break
@@ -193,7 +194,13 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             default:
                 break
             }
+        } else if indexPath.section == 3 {
+            switch indexPath.row {
+            case 0:
+                navigationController?.pushViewController(TextViewStudy(), animated: true)
+            default:
+                break
+            }
         }
-       
     }
 }
