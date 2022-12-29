@@ -10,9 +10,6 @@
 		760524822815B43900C3C243 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760524812815B43900C3C243 /* DiaryViewController.swift */; };
 		760524842815B70C00C3C243 /* DiaryTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760524832815B70C00C3C243 /* DiaryTabBarController.swift */; };
 		760524862815B7DD00C3C243 /* DiaryFavoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760524852815B7DD00C3C243 /* DiaryFavoItemViewController.swift */; };
-		760C973627F9A4A50051F8BF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C973527F9A4A50051F8BF /* ViewModel.swift */; };
-		760C973827F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C973727F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift */; };
-		760C973A27F9B4370051F8BF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C973927F9B4370051F8BF /* Model.swift */; };
 		760DE87528217EA100F8683E /* CovidDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DE87428217EA100F8683E /* CovidDetailViewController.swift */; };
 		760DE8772821870300F8683E /* CovidDetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DE8762821870300F8683E /* CovidDetailTableCell.swift */; };
 		760DE8862822C02900F8683E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 760DE8852822C02900F8683E /* RxCocoa */; };
@@ -54,6 +51,7 @@
 		7643FBA62822C0AF002D9894 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7643FBA52822C0AF002D9894 /* Then */; };
 		7643FBA92822C0F6002D9894 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7643FBA82822C0F6002D9894 /* Alamofire */; };
 		76445297295CA7CD003B0D65 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 76445296295CA7CD003B0D65 /* Charts */; };
+		7644529A295DDF09003B0D65 /* TextViewStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76445299295DDF09003B0D65 /* TextViewStudy.swift */; };
 		765B647C288D1F4600AEB816 /* Pods_SwiftStudyWiKi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02598D6D9D753A9DBF93701F /* Pods_SwiftStudyWiKi.framework */; };
 		7682A9CA288D2A7E008A1A50 /* NewsSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682A9C9288D2A7E008A1A50 /* NewsSearchManager.swift */; };
 		7682A9CD288D2FA7008A1A50 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682A9CC288D2FA7008A1A50 /* String+.swift */; };
@@ -101,7 +99,6 @@
 		76D675F028255E4E00A6EE21 /* SpotifyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D675EF28255E4E00A6EE21 /* SpotifyMainViewController.swift */; };
 		76D675F22825728D00A6EE21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76D675F12825728D00A6EE21 /* GoogleService-Info.plist */; };
 		76D675F52825733F00A6EE21 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 76D675F42825733F00A6EE21 /* FirebaseAuth */; };
-		76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */; };
 		76D8DB7327CE1D81004F90E0 /* SubjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8DB7227CE1D81004F90E0 /* SubjectData.swift */; };
 		76DF614827FB42A800E4F436 /* QuotesGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */; };
 		76DF614A27FB46D900E4F436 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF614927FB46D900E4F436 /* Quotes.swift */; };
@@ -141,9 +138,6 @@
 		760524812815B43900C3C243 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		760524832815B70C00C3C243 /* DiaryTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTabBarController.swift; sourceTree = "<group>"; };
 		760524852815B7DD00C3C243 /* DiaryFavoItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryFavoItemViewController.swift; sourceTree = "<group>"; };
-		760C973527F9A4A50051F8BF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		760C973727F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchTableCellTableViewCell.swift; sourceTree = "<group>"; };
-		760C973927F9B4370051F8BF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		760DE87428217EA100F8683E /* CovidDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDetailViewController.swift; sourceTree = "<group>"; };
 		760DE8762821870300F8683E /* CovidDetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDetailTableCell.swift; sourceTree = "<group>"; };
 		76211E662881B2FE0031AA2F /* MovieSearchRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchRequestModel.swift; sourceTree = "<group>"; };
@@ -182,6 +176,7 @@
 		764125FC27CA6D2B0041EC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764125FF27CA6D2B0041EC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7641260127CA6D2B0041EC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76445299295DDF09003B0D65 /* TextViewStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewStudy.swift; sourceTree = "<group>"; };
 		765B6475288D19D900AEB816 /* TTGTags.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TTGTags.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7682A9C9288D2A7E008A1A50 /* NewsSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSearchManager.swift; sourceTree = "<group>"; };
 		7682A9CC288D2FA7008A1A50 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
@@ -229,7 +224,6 @@
 		76D675ED28255E4100A6EE21 /* SpotifyEnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyEnterEmailViewController.swift; sourceTree = "<group>"; };
 		76D675EF28255E4E00A6EE21 /* SpotifyMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyMainViewController.swift; sourceTree = "<group>"; };
 		76D675F12825728D00A6EE21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchViewController.swift; sourceTree = "<group>"; };
 		76D8DB7227CE1D81004F90E0 /* SubjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectData.swift; sourceTree = "<group>"; };
 		76DF614727FB42A800E4F436 /* QuotesGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesGeneratorViewController.swift; sourceTree = "<group>"; };
 		76DF614927FB46D900E4F436 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
@@ -482,6 +476,14 @@
 				76D675F12825728D00A6EE21 /* GoogleService-Info.plist */,
 			);
 			path = SwiftStudyWiKi;
+			sourceTree = "<group>";
+		};
+		76445298295DDEF0003B0D65 /* Section 3 */ = {
+			isa = PBXGroup;
+			children = (
+				76445299295DDF09003B0D65 /* TextViewStudy.swift */,
+			);
+			path = "Section 3";
 			sourceTree = "<group>";
 		};
 		7682A9CB288D2A82008A1A50 /* Managers */ = {
@@ -741,23 +743,12 @@
 				764125F727CA6D2A0041EC89 /* MainViewController.swift */,
 				763AF27027CBABF3004040E2 /* SubjectTableCell.swift */,
 				763AF26E27CA6F81004040E2 /* MyNavigationController.swift */,
-				76D8DB6E27CE1BC7004F90E0 /* PrefetchStudy */,
 				76D675E82822D6BA00A6EE21 /* Part.2 */,
 				76D675E92822D6D500A6EE21 /* Part.3 */,
 				76BF126728740F33001740D8 /* Part.5 */,
+				76445298295DDEF0003B0D65 /* Section 3 */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		76D8DB6E27CE1BC7004F90E0 /* PrefetchStudy */ = {
-			isa = PBXGroup;
-			children = (
-				76D8DB6F27CE1C38004F90E0 /* PrefetchViewController.swift */,
-				760C973527F9A4A50051F8BF /* ViewModel.swift */,
-				760C973727F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift */,
-				760C973927F9B4370051F8BF /* Model.swift */,
-			);
-			path = PrefetchStudy;
 			sourceTree = "<group>";
 		};
 		76D8DB7127CE1D6F004F90E0 /* Data */ = {
@@ -1092,7 +1083,6 @@
 				76BF12C2287AABB0001740D8 /* SearchBookViewController.swift in Sources */,
 				76BF126D2874164E001740D8 /* TranslateViewController.swift in Sources */,
 				76D675F028255E4E00A6EE21 /* SpotifyMainViewController.swift in Sources */,
-				76D8DB7027CE1C38004F90E0 /* PrefetchViewController.swift in Sources */,
 				76A4D04B2857858F00DCC34C /* AlamofireViewController.swift in Sources */,
 				76BF12CC287AB471001740D8 /* Book.swift in Sources */,
 				763AF27127CBABF3004040E2 /* SubjectTableCell.swift in Sources */,
@@ -1116,6 +1106,7 @@
 				76211E692881B3280031AA2F /* MovieSearchResponseMoel.swift in Sources */,
 				7682A9CD288D2FA7008A1A50 /* String+.swift in Sources */,
 				76A90FE1280316B0007A3C81 /* SettingViewController.swift in Sources */,
+				7644529A295DDF09003B0D65 /* TextViewStudy.swift in Sources */,
 				763181312828039700BA27BE /* DrinkAlarmListViewController.swift in Sources */,
 				76A5878A2821767500D8D3DB /* CovidViewController.swift in Sources */,
 				76211EA2288400400031AA2F /* NewsListPresenter.swift in Sources */,
@@ -1131,14 +1122,12 @@
 				764125F427CA6D2A0041EC89 /* AppDelegate.swift in Sources */,
 				76BF127428742ECF001740D8 /* Language.swift in Sources */,
 				76BF12D1287ABCF2001740D8 /* UserDefaultsManager.swift in Sources */,
-				760C973A27F9B4370051F8BF /* Model.swift in Sources */,
 				7631813528280CA300BA27BE /* Alert.swift in Sources */,
 				7682A9CA288D2A7E008A1A50 /* NewsSearchManager.swift in Sources */,
 				76BDE161288D275E00527FAB /* NewsRequestModel.swift in Sources */,
 				764125F627CA6D2A0041EC89 /* SceneDelegate.swift in Sources */,
 				76BF1271287423C2001740D8 /* SourceTextViewController.swift in Sources */,
 				76211E792883054C0031AA2F /* MovieDetailViewController.swift in Sources */,
-				760C973627F9A4A50051F8BF /* ViewModel.swift in Sources */,
 				76DF614A27FB46D900E4F436 /* Quotes.swift in Sources */,
 				76BF128028743D19001740D8 /* BookmarkTextStackView.swift in Sources */,
 				76A5878528216F8200D8D3DB /* WeatherInformation.swift in Sources */,
@@ -1153,7 +1142,6 @@
 				76211E7D2883D9940031AA2F /* MovieContentStackView.swift in Sources */,
 				76211E6C2881B4060031AA2F /* Movie.swift in Sources */,
 				76BF126F28741B93001740D8 /* UIColor+.swift in Sources */,
-				760C973827F9A6850051F8BF /* PrefetchTableCellTableViewCell.swift in Sources */,
 				76A587872821743C00D8D3DB /* ErrorMsg.swift in Sources */,
 				76211E7F2883DC7F0031AA2F /* MovieUserDefaultsManagerProtocol.swift in Sources */,
 				76BF128528748BB9001740D8 /* TraslateRequestModel.swift in Sources */,
